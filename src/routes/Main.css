@@ -3,7 +3,8 @@
    padding-left: 300px;
    padding-right: 300px;
    border-left: 5px solid #0088a9;
-   border-right: 5px solid#0088a9;
+   border-right: 5px solid #0088a9;
+   border-image: linear-gradient(rgba(2,0,36,1) 0%, rgba(32,32,181,1) 22%, rgba(0,136,169,1) 81%) 1;
    margin-left: 100px;
    margin-right: 100px;
 }
@@ -17,8 +18,15 @@
    border: outset black 3px;
 }
 
-.venti {
+.venti-logo {
    width: 20%;
+}
+
+.venti-physical {
+   width: 40%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .main-section-one {
