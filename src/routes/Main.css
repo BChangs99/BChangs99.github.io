@@ -1,0 +1,43 @@
+.main {
+   display: block;
+   padding-left: 300px;
+   padding-right: 300px;
+   border-left: 5px solid #0088a9;
+   border-right: 5px solid#0088a9;
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+.headshot {
+   width: 25%;
+   height: auto;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 300px;
+   border: outset black 3px;
+}
+
+.venti {
+   width: 20%;
+}
+
+.main-section-one {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 50px;
+   border-bottom: solid #0088a9;
+}
+
+.main-text-intro {
+   justify-content: center;;
+}
+
+.main-img {
+   text-align: center;
+}
+
+.main p {
+   font-size: 20px;
+   line-height: 2;
+}
