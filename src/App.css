@@ -15,6 +15,7 @@
 .nav-link-home {
   margin-right: auto;
   text-decoration: none;
+  padding: 5px;
 }
 
 .nav-links-others {
@@ -24,11 +25,33 @@
 }
 
 .nav-link:hover {
-  text-decoration: underline #0088a9 3px;
+  box-shadow: 0 0 10px #0088a9;
   color: #0088a9;
+  border-radius: 20px;
 }
 
 .nav-link:link,
 .nav-link:visited {
   color: inherit
+}
+
+.nav-linkedin {
+ width: 30px;
+ margin-right: 10px;
+}
+
+.nav-linkedin:hover,
+.nav-github:hover {
+  box-shadow: 0 0 10px #0088a9;
+ }
+
+.nav-github {
+  width: 30px;
+}
+
+.nav-breaker {
+  background-color: black;
+  width: 2px;
+  height: 50px;
+  margin: 0 10px 0px 10px;
 }

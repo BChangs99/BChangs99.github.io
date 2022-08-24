@@ -1,4 +1,6 @@
 import './App.css';
+import linkedIn from './linkedin-logo.png'
+import github from './github.png'
 import { NavLink, Outlet } from 'react-router-dom';
 
 function App() {
@@ -16,6 +18,9 @@ function App() {
         >
           BChangs
         </NavLink>
+        <a href="https://www.linkedin.com/in/brianchangtron/"><img className='nav-linkedin' src={linkedIn} alt="Linked In"/></a>
+        <a href="https://github.com/BChangs99"><img className='nav-github' src={github} alt="Github"/></a>
+        <div className="nav-breaker"></div>
         <NavLink 
           style={(isActive) => {
             return { 

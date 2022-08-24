@@ -30,7 +30,7 @@ export default function Main() {
             but have since accrued professional work experience over the last 5 years in Co-Op positions. I've worked both with and without a team, and have been
             able to excel in many types of environments. Over the years I've worked as a developer for small startups in Canada to large corporations in Taiwan. I'm looking for an opportunity
             to further cultivate my current MERN (Mongo Express React Node) skillset and also to learn exciting new technologies to add to my repertoire!
-            Check out some of my projects below, and feel free to reach out if you'd like to chat!
+            Check out some of the projects I've worked on below in detail, or if you want to skip straight to the short and good stuff, take a look at my resume!
          </p>
          <h1>Projects</h1>
          <img src={ventiLogo} alt="ventiLogo" className='venti-logo' />
