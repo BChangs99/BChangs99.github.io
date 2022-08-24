@@ -27,6 +27,7 @@
    display: block;
    margin-left: auto;
    margin-right: auto;
+   border: solid #0088a9 3px;
 }
 
 .main-section-one {
@@ -41,6 +42,10 @@
    justify-content: center;;
 }
 
+.main-text-intro-right {
+   text-align: end;
+}
+
 .main-img {
    text-align: center;
 }
@@ -48,4 +53,24 @@
 .main p {
    font-size: 20px;
    line-height: 2;
+}
+
+.main-projects-mantis,
+.main-projects-mte220 {
+   display: flex;
+   align-items: center;
+}
+
+.mantis-web-icon,
+.mte220-web-icon {
+   width: 50px;
+   padding-left: 10px;
+}
+
+.mantis-example {
+   width: 80%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border: solid #0088a9 3px;
 }
