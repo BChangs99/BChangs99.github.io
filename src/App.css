@@ -55,3 +55,18 @@
   height: 50px;
   margin: 0 10px 0px 10px;
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  border-top: solid black 3px;
+  margin-top: 50px;
+  vertical-align: middle;
+  font-size: 24px;
+  background-color: white;
+}
+
+.footer-text-links {
+  font-size: 12px;
+}
