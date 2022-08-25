@@ -38,17 +38,6 @@ function App() {
               color: isActive.isActive ? "#0088a9" : "inherit"
             }
           }}
-          to="/projects" 
-          className='nav-links-others nav-link'
-        >
-          Projects
-        </NavLink>
-        <NavLink 
-          style={(isActive) => {
-            return { 
-              color: isActive.isActive ? "#0088a9" : "inherit"
-            }
-          }}
           to="/resume" 
           className='nav-links-others nav-link'
         >

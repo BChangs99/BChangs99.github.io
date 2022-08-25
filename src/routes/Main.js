@@ -93,7 +93,7 @@ export default function Main() {
          </p>
          <div className="main-projects-mte220">
             <h2>MTE 220 Mark Calculator</h2>
-            <a href="https://github.com/BChangs99/MTE220_Calculator"><img src={webIcon} alt="Web Link" className="mte220-web-icon"/></a>
+         <a href="https://github.com/BChangs99/MTE220_Calculator"><img src={webIcon} alt="Web Link" className="mte220-web-icon"/></a>
          </div>
          <p>
             This was just a quick little project for calculating your mark for students who took MTE 220 (Sensors and Instrumentaton) with James Barby. For some reason, the marking scheme was extremely complicated,
