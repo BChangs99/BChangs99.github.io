@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f737436e.css",
+    "main.js": "/static/js/main.b40f78bb.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/ventiphysical.png": "/static/media/ventiphysical.fe68a529d3e7e118eb00.png",
+    "static/media/BrianChang_Resume082022.jpg": "/static/media/BrianChang_Resume082022.ca5b4412593d6a9dfbda.jpg",
+    "static/media/IMG_8920.JPG": "/static/media/IMG_8920.0c7b2ed13794d643c232.JPG",
+    "static/media/Mantis.png": "/static/media/Mantis.e02d7a4a78745e5a1e17.png",
+    "static/media/ventilogo.jpg": "/static/media/ventilogo.23cd411eeea4153ec676.jpg",
+    "static/media/github.png": "/static/media/github.44eee0c4a6c25b0d7347.png",
+    "static/media/internet.png": "/static/media/internet.b2c514376e752719d541.png",
+    "index.html": "/index.html",
+    "main.f737436e.css.map": "/static/css/main.f737436e.css.map",
+    "main.b40f78bb.js.map": "/static/js/main.b40f78bb.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f737436e.css",
+    "static/js/main.b40f78bb.js"
+  ]
+}
