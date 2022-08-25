@@ -10,11 +10,11 @@
 }
 
 .headshot {
-   width: 25%;
+   width: 30%;
    height: auto;
    margin-left: auto;
    margin-right: auto;
-   border-radius: 300px;
+   border-radius: 200px;
    border: outset black 3px;
 }
 

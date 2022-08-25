@@ -1,5 +1,5 @@
 import "./Main.css"
-import headshot from '../IMG_8920.JPG'
+import headshot from '../headshot.jpg'
 import ventiLogo from '../ventilogo.jpg'
 import ventiPhysical from '../ventiphysical.png'
 import webIcon from '../internet.png'
