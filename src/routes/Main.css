@@ -84,6 +84,7 @@
 .main-intro-container {
    display: flex;
    font-size: 20px;
+   border-bottom: solid #0088a9;
 }
 
 .main-bio-container {
