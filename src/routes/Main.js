@@ -7,9 +7,9 @@ import mantis from '../Mantis.png'
 
 export default function Main() {
    // **Todo
-   // 1. Add a link to the resume
+   // 1. Add a link to the resume (Done)
    // 2. Refactor projects, skills into its own component
-   // 3. Add icons/links for contact info
+   // 3. Add icons/links for contact info (Done)
    // 4. Decide if repo can stay private (for mantis)
    return (
       <div className="main">
@@ -27,14 +27,31 @@ export default function Main() {
                <h2>Based in Vancouver</h2>
             </div>
          </div>
-         <h1>About Me</h1>
-         <p className="main-bio">
-            Howdy Y'all &#129312;! I'm Brian Chang, and I'm a recent Mechatronics graduate from the University of Waterloo. I started off as a self-taught web developer,
-            but have since accrued professional work experience over the last 5 years in Co-Op positions. I've worked both with and without a team, and have been
-            able to excel in many types of environments. Over the years I've worked as a developer for small startups in Canada to large corporations in Taiwan. I'm looking for an opportunity
-            to further cultivate my current MERN (Mongo Express React Node) skillset and also to learn exciting new technologies to add to my repertoire!
-            Check out some of the projects I've worked on below in detail, or if you want to skip straight to the short and good stuff, take a look at my resume!
-         </p>
+         <div  className="main-intro-container">
+            <div className="main-bio-container">
+               <h1>About Me</h1>
+               <p className="main-bio">
+                  Howdy Y'all &#129312;! I'm Brian Chang, and I'm a recent Mechatronics graduate from the University of Waterloo. I started off as a self-taught web developer,
+                  but have since accrued professional work experience over the last 5 years in Co-Op positions. I've worked both with and without a team, and have been
+                  able to excel in many types of environments. Over the years I've worked as a developer for small startups in Canada to large corporations in Taiwan. I'm looking for an opportunity
+                  to further cultivate my current MERN (Mongo Express React Node) skillset and also to learn exciting new technologies to add to my repertoire!
+                  Check out some of the projects I've worked on below in detail, or if you want to skip straight to the short and good stuff, take a look at my resume!
+               </p>
+            </div>
+            <div className="main-intro-divider"></div>
+            <div className="main-skills-container">
+               <h1>Skills</h1>
+               <ul className="main-skills">
+                  <li>Javascript<span className="bar"><span className="main-skills-javascript"></span></span></li>
+                  <li>React.js (incl. React-Redux, React-Router)<span className="bar"><span className="main-skills-react"></span></span></li>
+                  <li>HTML<span className="bar"><span className="main-skills-html"></span></span></li>
+                  <li>CSS<span className="bar"><span className="main-skills-css"></span></span></li>
+                  <li>Node.js<span className="bar"><span className="main-skills-node"></span></span></li>
+                  <li>Git<span className="bar"><span className="main-skills-git"></span></span></li>
+                  <li>C++<span className="bar"><span className="main-skills-c-plus-plus"></span></span></li>
+               </ul>
+            </div>
+         </div>
          <h1>Projects</h1>
          <img src={ventiLogo} alt="ventiLogo" className='venti-logo' />
          <p className="main-projects-venti">

@@ -15,7 +15,6 @@ root.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Main />} />
-          <Route path="/skills" element={<Skills />} />
           <Route path="/resume" element={<Resume />} />
         </Route>
       </Routes>

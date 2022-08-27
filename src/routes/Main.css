@@ -74,3 +74,154 @@
    margin-right: auto;
    border: solid #0088a9 3px;
 }
+
+.main-intro-container {
+   display: flex;
+   font-size: 20px;
+}
+
+.main-bio-container {
+   width: 50%;
+}
+
+.main-skills-container {
+   width: 50%;
+}
+
+.main-intro-divider {
+   width: 4px;
+   background-color: #0088a9;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   margin-left: 25px;
+   margin-right: 25px;
+}
+
+.main-skills {
+   list-style: none;
+   width: 100%;
+   padding: 0;
+   color: black;
+}
+
+.main-skills li {
+   margin-bottom: 14px;
+}
+
+.bar {
+   background: white;
+   display: block;
+   height: 20px;
+   border: 1px solid #0088a9;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1 px 2px rgba(0,0,0 0.24);
+   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+   margin-top: 5px;
+}
+
+.bar:hover {
+   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span {
+   height: 100%;
+   /* Sets the second color on top by using float so it overlaps*/
+   float: left;
+   background: linear-gradient(90deg, rgba(4,87,107,1) 0%, rgba(32,170,181,1) 100%);
+}
+
+.main-skills-javascript {
+   width: 80%;
+   animation: main-skills-javascript 3s;
+}
+
+.main-skills-react {
+   width: 80%;
+   animation: main-skills-react 3s;
+}
+
+.main-skills-html {
+   width: 65%;
+   animation: main-skills-html 3s;
+}
+
+.main-skills-css {
+   width: 55%;
+   animation: main-skills-css 3s;
+}
+
+.main-skills-node {
+   width: 50%;
+   animation: main-skills-node 3s;
+}
+
+.main-skills-git {
+   width: 45%;
+   animation: main-skills-git 3s;
+}
+
+.main-skills-c-plus-plus{
+   width: 25%;
+   animation: main-skills-c-plus-plus 3s;
+}
+@keyframes main-skills-javascript {
+   0% {
+      width: 0%;
+   }
+   100% {
+      width: 80%;
+   }
+}
+@keyframes main-skills-react {
+   0% {
+      width: 0%;
+   }
+   100% {
+      width: 80%;
+   }
+}
+@keyframes main-skills-html {
+   0% {
+      width: 0%;
+   }
+   100% {
+      width: 65%;
+   }
+}
+
+@keyframes main-skills-css {
+   0% {
+      width: 0%;
+   }
+   100% {
+      width: 55%;
+   }
+}
+
+@keyframes main-skills-node {
+   0% {
+      width: 0%;
+   }
+   100% {
+      width: 50%;
+   }
+}
+
+@keyframes main-skills-git {
+   0% {
+      width: 0%;
+   }
+   100% {
+      width: 45%;
+   }
+}
+
+@keyframes main-skills-c-plus-plus {
+   0% {
+      width: 0%;
+   }
+   100% {
+      width: 25%;
+   }
+}

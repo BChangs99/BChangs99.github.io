@@ -27,17 +27,6 @@ function App() {
               color: isActive.isActive ? "#0088a9" : "inherit"
             }
           }}
-          to="/skills" 
-          className='nav-links-others nav-link'
-        >
-          Skills
-        </NavLink>
-        <NavLink 
-          style={(isActive) => {
-            return { 
-              color: isActive.isActive ? "#0088a9" : "inherit"
-            }
-          }}
           to="/resume" 
           className='nav-links-others nav-link'
         >
