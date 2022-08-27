@@ -42,12 +42,18 @@
    justify-content: center;;
 }
 
+.main-text-intro-left {
+   width: 25%;
+}
+
 .main-text-intro-right {
    text-align: end;
+   width: 25%;
 }
 
 .main-img {
    text-align: center;
+   width: 50%;
 }
 
 .main p {
