@@ -27,7 +27,7 @@ export default function Main() {
                <h2>Based in Vancouver</h2>
             </div>
          </div>
-         <div  className="main-intro-container">
+         <div className="main-intro-container">
             <div className="main-bio-container">
                <h1>About Me</h1>
                <p className="main-bio">
