@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Skills from './routes/Skills';
 import Resume from './routes/Resume';
 import Main from './routes/Main';
 import reportWebVitals from './reportWebVitals';

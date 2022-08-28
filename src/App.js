@@ -2,8 +2,20 @@ import './App.css';
 import linkedIn from './linkedin-logo.png'
 import github from './github.png'
 import { NavLink, Outlet } from 'react-router-dom';
+import usePageTracking from './usePageTracking';
+import ReactGA from 'react-ga';
 
 function App() {
+  function handleResumeOnClick() {
+    // Log the click event to GA
+    ReactGA.event({
+      category: 'Resume',
+      action: 'Clicked',
+      label: 'Resume',
+    });
+  }
+  usePageTracking();
+
   return (
     <div>
       <nav className="nav">
@@ -29,6 +41,7 @@ function App() {
           }}
           to="/resume" 
           className='nav-links-others nav-link'
+          onClick={handleResumeOnClick}
         >
           Resume
         </NavLink>
