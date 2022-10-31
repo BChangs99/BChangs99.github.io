@@ -1,12 +1,12 @@
 .main {
    display: block;
-   padding-left: 300px;
-   padding-right: 300px;
-   border-left: 5px solid #0088a9;
+   height: 100%;
+   width: 100%;
+   /* padding-left: 300px;
+   padding-right: 300px; */
+   /* border-left: 5px solid #0088a9;
    border-right: 5px solid #0088a9;
-   border-image: linear-gradient(rgba(2,0,36,1) 0%, rgba(32,32,181,1) 22%, rgba(0,136,169,1) 81%) 1;
-   margin-left: 100px;
-   margin-right: 100px;
+   border-image: linear-gradient(rgba(2,0,36,1) 0%, rgba(32,32,181,1) 22%, rgba(0,136,169,1) 81%) 1; */
 }
 
 .headshot {

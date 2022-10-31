@@ -1,9 +1,10 @@
 import './App.css';
-import linkedIn from './linkedin-logo.png'
-import github from './github.png'
 import { NavLink, Outlet } from 'react-router-dom';
 import usePageTracking from './usePageTracking';
 import ReactGA from 'react-ga';
+import { Burger } from './Burger';
+import BurgerMenu from './BurgerMenu';
+import { Fragment } from 'react';
 
 function App() {
   function handleResumeOnClick() {
@@ -17,8 +18,10 @@ function App() {
   usePageTracking();
 
   return (
-    <div>
-      <nav className="nav">
+    <Fragment>
+      <Burger />
+      <BurgerMenu handleResumeOnClick={handleResumeOnClick} />
+      {/* <nav className="nav">
         <NavLink 
           style={(isActive) => {
             return { 
@@ -45,7 +48,7 @@ function App() {
         >
           Resume
         </NavLink>
-      </nav>
+      </nav> */}
       <Outlet />
       <footer className='footer'>
         <div className='footer-text'>
@@ -58,7 +61,7 @@ function App() {
           </ul>
         </div>
       </footer>
-    </div>
+    </Fragment>
   );
 }
 
