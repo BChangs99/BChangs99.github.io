@@ -2,15 +2,19 @@
   box-sizing: border-box;
 }
 
+/* Changed Width and Height to be 99% to fix mobile issues */
+
 body {
   height: 100%;
-  width: 100%;
+  width: 99%;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 html {
   height: 100%;
-  width: 100%;
+  width: 99%;
+  overflow-x: hidden;
 }
 
 #root {

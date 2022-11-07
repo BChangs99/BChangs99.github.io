@@ -1,12 +1,16 @@
+.App {
+  position: relative;
+}
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 80px;
   border-bottom: solid black 3px;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   vertical-align: middle;
-  font-size: 24px;
+  font-size: 1.5rem;
   position: sticky;
   top: 0;
   background-color: white;
@@ -15,11 +19,11 @@
 .nav-link-home {
   margin-right: auto;
   text-decoration: none;
-  padding: 5px;
+  padding: 0.313rem;
 }
 
 .nav-links-others {
-  padding: 0px 10px 0px 10px;
+  padding: 0 0.625rem 0 0.625rem;
   text-decoration: none;
   transition: all 0.3s ease 0s;
 }
@@ -37,7 +41,7 @@
 
 .nav-linkedin {
  width: 30px;
- margin-right: 10px;
+ margin-right: 0.625rem;
 }
 
 .nav-linkedin:hover,
@@ -53,20 +57,23 @@
   background-color: black;
   width: 2px;
   height: 50px;
-  margin: 0 10px 0px 10px;
+  margin: 0rem 0.625rem 0rem 0.625rem;
 }
 
 .footer {
+  position: absolute;
+  width: 100%;
   display: flex;
   align-items: center;
-  height: 120px;
+  height: 15vh;
   border-top: solid black 3px;
-  margin-top: 50px;
+  margin-top: 3.125rem;
   vertical-align: middle;
-  font-size: 24px;
-  background-color: white;
+  font-size: 1.5rem;
+  background-color: #0088a9;
+  color: white;
 }
 
 .footer-text-links {
-  font-size: 12px;
+  font-size: 0.75rem;
 }

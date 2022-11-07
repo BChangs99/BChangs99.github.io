@@ -1,24 +1,15 @@
 import './App.css';
 import { NavLink, Outlet } from 'react-router-dom';
 import usePageTracking from './usePageTracking';
-import ReactGA from 'react-ga';
 import { Burger } from './Burger';
 import BurgerMenu from './BurgerMenu';
-import { Fragment } from 'react';
+import { handleResumeOnClick } from './shared';
 
 function App() {
-  function handleResumeOnClick() {
-    // Log the click event to GA
-    ReactGA.event({
-      category: 'Resume',
-      action: 'Clicked',
-      label: 'Resume',
-    });
-  }
   usePageTracking();
 
   return (
-    <Fragment>
+    <div className='App'>
       <Burger />
       <BurgerMenu handleResumeOnClick={handleResumeOnClick} />
       {/* <nav className="nav">
@@ -61,7 +52,7 @@ function App() {
           </ul>
         </div>
       </footer>
-    </Fragment>
+    </div>
   );
 }
 
