@@ -3,10 +3,11 @@ import "./Burger.css"
 
 export const Burger = () => {
    function burgerOnClick() {
-      // onclick toggle burger menu to slide from the whole left side of the screen
-      let burgerMenuStyles = document.querySelector(".burger-menu-holder");
-      console.log("burgerMenuStyles", burgerMenuStyles)
-      burgerMenuStyles.classList.add("open");
+      // onclick toggle burger menu to slide from the whole left side of the scree
+      let burgerMenuOverlay = document.querySelector(".burger-menu-overlay");
+      let burgerMenuHolder = document.querySelector(".burger-menu-holder");
+      burgerMenuOverlay.classList.add("open-overlay");
+      burgerMenuHolder.classList.add("open");
    }
 
 

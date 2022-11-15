@@ -1,78 +1,168 @@
-import React, {useEffect} from 'react'
-import "./Skills.css"
+import React, { useEffect } from 'react'
+import { Skillbar } from './Skillbar';
+import "./skills.css"
 
 export default function Skills() {
    const skillsRef = React.useRef(null);
-   const javascriptRef = React.useRef(null);
-   const reactRef = React.useRef(null);
-   const htmlRef = React.useRef(null);
-   const cssRef = React.useRef(null);
-   const nodeRef = React.useRef(null);
-   const gitRef = React.useRef(null);
-   const cRef = React.useRef(null);
+   const javascriptBarRef = React.useRef(null);
+   const reactBarRef = React.useRef(null);
+   const htmlBarRef = React.useRef(null);
+   const cssBarRef = React.useRef(null);
+   const nodeBarRef = React.useRef(null);
+   const gitBarRef = React.useRef(null);
+   const cBarRef = React.useRef(null);
 
    const options = {
       root: null, // relative to document viewport
       rootMargin: "0px", // margin around root. Values are similar to css property. Unitless values not allowed
-      threshold: 0 // visible amount of item shown in relation to root
+      // 0.36 is the most threshold can take because we slide the actual element off the screen
+      // so any more and it's not enough threshold
+      threshold: 0.36 // visible amount of item shown in relation to root
    }
 
-   // Still trying to figure out how to include the translate from left 100% skill
-   // Kind of want to do something like have them slide in in alternating style (1,3,5 from left and 2,4,6 from right)
-   // May have to just attach the animation to the container of the bar
+   const SkillsSection = [
+      {
+         componentRef: javascriptBarRef,
+         componentId: "javascript",
+         children: "Javascript"
+      },
+      {
+         componentRef: reactBarRef,
+         componentId: "react",
+         children: "React"
+      },
+      {
+         componentRef: htmlBarRef,
+         componentId: "html",
+         children: "HTML"
+      },
+      {
+         componentRef: cssBarRef,
+         componentId: "css",
+         children: "CSS"
+      },
+      {
+         componentRef: nodeBarRef,
+         componentId: "node",
+         children: "Node"
+      },
+      {
+         componentRef: gitBarRef,
+         componentId: "git",
+         children: "Git"
+      },
+      {
+         componentRef: cBarRef,
+         componentId: "c",
+         children: "C"
+      }
+   ]
 
+   function handleAnimations(ref, refCase, add) {
+      let showSkills = "show-skills"
+      let child  = ref.current.children[0]
+      
+      if (add) {
+         ref.current.classList.add(showSkills);
+         child.classList.add(showSkills);
+         child.children[0].classList.add(`${refCase}-animation`)
+         child.children[0].classList.add(showSkills)
+      } else {
+         ref.current.classList.remove(showSkills);
+         child.classList.remove(showSkills);
+         child.children[0].classList.remove(`${refCase}-animation`)
+         child.children[0].classList.remove(showSkills)
+      }
+   }
+
+   // Kind of want to do something like have them slide in in alternating style (1,3,5 from left and 2,4,6 from right)
    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
          if (entry.isIntersecting) {
-            entry.target.classList.add("show-skills")
             switch (entry.target.id) {
                case "javascript":
-                  javascriptRef.current.classList.add("javascript-animation");
+                  handleAnimations(javascriptBarRef, "javascript", true)
+                  break;
                case "react":
-                  reactRef.current.classList.add("react-animation");
+                  handleAnimations(reactBarRef, "react", true)
+                  break;
                case "html":
-                  htmlRef.current.classList.add("html-animation");
+                  handleAnimations(htmlBarRef, "html", true)
+                  break;
                case "css":
-                  cssRef.current.classList.add("css-animation");
+                  handleAnimations(cssBarRef, "css", true)
+                  break;
                case "node":
-                  nodeRef.current.classList.add("node-animation");
+                  handleAnimations(nodeBarRef, "node", true)
+                  break;
                case "git":
-                  gitRef.current.classList.add("git-animation");
+                  handleAnimations(gitBarRef, "git", true)
+                  break;
                case "c":
-                  cRef.current.classList.add("c-animation");
+                  handleAnimations(cBarRef, "c", true)
+                  break;
+               default:
+                  entry.target.classList.add("show-skills")
             }
          } else {
-            entry.target.classList.remove("show-skills")
+            switch (entry.target.id) {
+               case "javascript":
+                  handleAnimations(javascriptBarRef, "javascript", false)
+                  break;
+               case "react":
+                  handleAnimations(reactBarRef, "react", false)
+                  break;
+               case "html":
+                  handleAnimations(htmlBarRef, "html", false)
+                  break;
+               case "css":
+                  handleAnimations(cssBarRef, "css", false)
+                  break;
+               case "node":
+                  handleAnimations(nodeBarRef, "node", false)
+                  break;
+               case "git":
+                  handleAnimations(gitBarRef, "git", false)
+                  break;
+               case "c":
+                  handleAnimations(cBarRef, "c", false)
+                  break;
+               default:
+                  entry.target.classList.remove("show-skills")
+            }
          }
       })
    }, options);
 
    useEffect(() => {
       if (skillsRef.current) observer.observe(skillsRef.current);
-      if (javascriptRef.current) observer.observe(javascriptRef.current);
-      if (reactRef.current) observer.observe(reactRef.current);
-      if (htmlRef.current) observer.observe(htmlRef.current);
-      if (cssRef.current) observer.observe(cssRef.current);
-      if (nodeRef.current) observer.observe(nodeRef.current);
-      if (gitRef.current) observer.observe(gitRef.current);
-      if (cRef.current) observer.observe(cRef.current);
+      if (javascriptBarRef.current) observer.observe(javascriptBarRef.current);
+      if (reactBarRef.current) observer.observe(reactBarRef.current);
+      if (htmlBarRef.current) observer.observe(htmlBarRef.current);
+      if (cssBarRef.current) observer.observe(cssBarRef.current);
+      if (nodeBarRef.current) observer.observe(nodeBarRef.current);
+      if (gitBarRef.current) observer.observe(gitBarRef.current);
+      if (cBarRef.current) observer.observe(cBarRef.current);
 
      return () => {
        observer.disconnect();
      }
-   }, [skillsRef, javascriptRef, reactRef, htmlRef, cssRef, nodeRef, gitRef, cRef]);
+   }, [skillsRef, javascriptBarRef, reactBarRef, htmlBarRef, cssBarRef, nodeBarRef, gitBarRef, cBarRef]);
    
    return (
       <div className="main-skills-container">
          <h1 className="hidden" ref={skillsRef}>Skills</h1>
          <ul className="main-skills">
-            <li>Javascript<span className="bar"><span id="javascript" ref={javascriptRef} className="hidden-skills"></span></span></li>
-            <li>React.js (incl. React-Redux, React-Router)<span className="bar"><span id="react" ref={reactRef} className="hidden-skills"></span></span></li>
-            <li>HTML<span className="bar"><span id="html" ref={htmlRef} className="hidden-skills"></span></span></li>
-            <li>CSS<span className="bar"><span id="css" ref={cssRef} className="hidden-skills"></span></span></li>
-            <li>Node.js<span className="bar"><span id="node" ref={nodeRef} className="hidden-skills"></span></span></li>
-            <li>Git<span className="bar"><span id="git" ref={gitRef} className="hidden-skills"></span></span></li>
-            <li>C++<span className="bar"><span id="c" ref={cRef} className="hidden-skills"></span></span></li>
+            {SkillsSection.map((skill, index) => {
+               return (
+                  <Skillbar
+                     key={index}
+                     componentRef={skill.componentRef}
+                     componentId={skill.componentId}
+                     children={skill.children}
+                  />
+               )
+            })}
          </ul>
       </div>
    )

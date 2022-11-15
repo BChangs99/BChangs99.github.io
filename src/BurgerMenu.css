@@ -2,11 +2,10 @@
    position: fixed;
    width:  100%;
    height: 100vh;
-   transform: translateX(-110%);
-   transition: transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
    top: 0;
    left: 0;
-   z-index: 1;
+   z-index: -1;
+   transform: translateX(-110%);
 }
 
 .burger-menu {
@@ -14,7 +13,7 @@
    position: absolute;
    top: 0;
    left: 0;
-   z-index: 2;
+   z-index: 0;
    background-color: #0088a9;
    width: 65%;
    display: flex;
@@ -33,7 +32,7 @@
    background-size: 1.75rem 1.75rem;
    padding: 1.5rem;
    background-repeat: no-repeat;
-   background-image: url("./close.png");
+   background-image: url("./assets/close.webp");
    background-position: center;   
    border: transparent 2px white;
    border-radius: 100px;
@@ -51,9 +50,10 @@
    left: 0;
    background-color: rgba(128, 128, 128, 0.1);
    backdrop-filter: blur(3px);
-   z-index: 1;
    width: 100vw;
    height: 100vh;
+   opacity: 0;
+   z-index: -1;
 }
 
 .burger-menu-text-holder {

@@ -1,32 +1,43 @@
-@media (prefers-color-scheme: dark) {
+@import "./_colors.scss";
+
+// A mix-in to apply all the dark mode themes
+@mixin dark-mode {
   .main-section-one, .main-bio, .main-projects, .main-text-intro-left, .main-bio-container, .main-skills-container h1, .main-skills {
-    color: white;
+    color: $white-text-color;
   }
+
+  // This is to change the burger icon colour to white
+  // Did this instead of messing with svgs
+  // Website for finding how to filter from 1 color to another: https://codepen.io/sosuke/pen/Pjoqqp
   .burger, .burger-menu-close .mantis-web-icon, .mte220-web-icon {
     filter: invert(84%) sepia(100%) saturate(0%) hue-rotate(200deg) brightness(104%) contrast(102%);
   }
+
   .burger-menu {
     color: white;
   }
+
   .App {
-    background-color: #121212;
+    background-color: $dark-background-color
   }
 }
-.dark-mode .main-section-one, .dark-mode .main-bio, .dark-mode .main-projects, .dark-mode .main-text-intro-left, .dark-mode .main-bio-container, .dark-mode .main-skills-container h1, .dark-mode .main-skills {
-  color: white;
-}
-.dark-mode .burger, .dark-mode .burger-menu-close .mantis-web-icon, .dark-mode .mte220-web-icon {
-  filter: invert(84%) sepia(100%) saturate(0%) hue-rotate(200deg) brightness(104%) contrast(102%);
-}
-.dark-mode .burger-menu {
-  color: white;
-}
-.dark-mode .App {
-  background-color: #121212;
+
+@mixin light-mode {
+  .main-section-one, .main-bio, .main-projects, .main-text-intro-left, .main-bio-container, .main-skills-container h1, .main-skills {
+    color: $black-text-color;
+  }
 }
 
-.light-mode .main-section-one, .light-mode .main-bio, .light-mode .main-projects, .light-mode .main-text-intro-left, .light-mode .main-bio-container, .light-mode .main-skills-container h1, .light-mode .main-skills {
-  color: black;
+@media (prefers-color-scheme: dark) {
+  @include dark-mode;
+}
+
+.dark-mode {
+@include ark-mode;
+}
+
+.light-mode {
+  @include light-mode;
 }
 
 .App {
@@ -60,25 +71,25 @@
 }
 
 .nav-link:hover {
-  box-shadow: 0 0 10px #0088a9;
-  color: #0088a9;
+  box-shadow: 0 0 10px $main-blue;
+  color: $main-blue;
   border-radius: 20px;
 }
 
 .nav-link:link,
 .nav-link:visited {
-  color: inherit;
+  color: inherit
 }
 
 .nav-linkedin {
-  width: 30px;
-  margin-right: 0.625rem;
+ width: 30px;
+ margin-right: 0.625rem;
 }
 
 .nav-linkedin:hover,
 .nav-github:hover {
-  box-shadow: 0 0 10px #0088a9;
-}
+  box-shadow: 0 0 10px $main-blue;
+ }
 
 .nav-github {
   width: 30px;
@@ -101,12 +112,10 @@
   margin-top: 3.125rem;
   vertical-align: middle;
   font-size: 1.5rem;
-  background-color: #0088a9;
+  background-color: $main-blue;
   color: white;
 }
 
 .footer-text-links {
   font-size: 0.75rem;
 }
-
-/*# sourceMappingURL=App.css.map */

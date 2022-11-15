@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import usePageTracking from './usePageTracking';
 import { Burger } from './Burger';
@@ -8,10 +9,21 @@ import { handleResumeOnClick } from './shared';
 function App() {
   usePageTracking();
 
+  const [darkMode, setDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className='App'>
+    <div className={darkMode ? "App dark-mode" : "App"}>
       <Burger />
       <BurgerMenu handleResumeOnClick={handleResumeOnClick} />
+      <div 
+        style={{ color: "black" }}
+        onClick={toggleDarkMode}
+      >
+        Button
+      </div>
       {/* <nav className="nav">
         <NavLink 
           style={(isActive) => {

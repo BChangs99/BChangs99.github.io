@@ -1,13 +1,11 @@
 .burger {
-   background-image: url("./menu.png");
+   background-image: url("./assets/menu.webp");
    background-size: 3rem 3rem;
    position: relative;
    top: 0.5rem;
    left: 0.5rem;
    width: 3rem;
    height: 3rem;
-   /* Instead of opacity do something with colour */
-   opacity: 60%;
    transition: opacity 0.2s ease-out;
    animation: rotate 10s 2s infinite ease-in-out running;
 }
@@ -19,7 +17,17 @@
 
 .open {
    display: block !important;
-   transform: translateY(0) !important;
+   transform: translateX(0) !important;
+   opacity: 1 !important;
+   z-index: 2 !important;
+   transition: transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1) !important;
+}
+
+.open-overlay {
+   display: block !important;
+   opacity: 1 !important;
+   transition: opacity 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+   z-index: 1 !important;
 }
 
 @keyframes rotate {

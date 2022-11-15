@@ -1,17 +1,20 @@
+@import "./_colors.scss";
+
 .main-skills {
   list-style: none;
   width: 100%;
   padding: 0;
-}
-.main-skills li {
-  margin-bottom: 0.875rem;
+
+  li {
+    margin-bottom: 0.875rem;
+  }
 }
 
 .bar {
   background: white;
   display: block;
   height: 20px;
-  border: 1px solid #0088a9;
+  border: 1px solid $main-blue;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1 px 2px rgba(0, 0, 0, 0.24);
@@ -27,7 +30,7 @@
   height: 100%;
   /* Sets the second color on top by using float so it overlaps*/
   float: left;
-  background: linear-gradient(90deg, rgb(4, 87, 107) 0%, rgb(32, 170, 181) 100%);
+  background: linear-gradient(90deg, rgba(4, 87, 107, 1) 0%, rgba(32, 170, 181, 1) 100%);
 }
 
 @keyframes main-skills-javascript {
@@ -97,7 +100,6 @@
   opacity: 1;
   filter: blur(0px);
   transform: translateX(0%);
-  transition: all 0.9s;
 }
 
 .javascript-animation {
@@ -109,39 +111,37 @@
 .react-animation {
   width: 80%;
   animation: react-animation 2.5s;
-  transition-delay: 1.05s;
+  transition-delay: 1.1s;
 }
 
 .html-animation {
   width: 65%;
   animation: main-skills-html 2.5s;
-  transition-delay: 1.1s;
+  transition-delay: 1.2s;
 }
 
 .css-animation {
   width: 55%;
   animation: main-skills-css 2.5s;
-  transition-delay: 1.15s;
+  transition-delay: 1.3s;
 }
 
 .node-animation {
   width: 50%;
   animation: main-skills-node 2.5s;
-  transition-delay: 1.2s;
+  transition-delay: 1.4s;
 }
 
 .git-animation {
   width: 45%;
   animation: main-skills-2git 2.5s;
-  transition-delay: 1.25s;
+  transition-delay: 1.5s;
 }
 
 .c-animation {
   width: 25%;
   animation: main-skills-c-plus-plus 2.5s;
-  transition-delay: 1.3s;
+  transition-delay: 1.6s;
 }
 
 /*# sourceMappingURL=skills.scss.map */
-
-/*# sourceMappingURL=skills.css.map */
