@@ -1,36 +1,48 @@
-@media (prefers-color-scheme: dark) {
-  .main-section-one, .main-bio, .main-projects, .main-text-intro-left, .main-bio-container, .main-skills-container h1, .main-skills {
-    color: white;
-  }
-  .burger, .burger-menu-close .mantis-web-icon, .mte220-web-icon {
-    filter: invert(84%) sepia(100%) saturate(0%) hue-rotate(200deg) brightness(104%) contrast(102%);
-  }
-  .burger-menu {
-    color: white;
-  }
-  .App {
-    background-color: #121212;
-  }
-}
-.dark-mode .main-section-one, .dark-mode .main-bio, .dark-mode .main-projects, .dark-mode .main-text-intro-left, .dark-mode .main-bio-container, .dark-mode .main-skills-container h1, .dark-mode .main-skills {
+.dark-mode .main-section-one, .dark-mode .main-bio, .dark-mode .main-projects, .dark-mode .main-text-intro-left, .dark-mode .about-me-container, .dark-mode .main-skills-container h1, .dark-mode .main-skills {
   color: white;
 }
-.dark-mode .burger, .dark-mode .burger-menu-close .mantis-web-icon, .dark-mode .mte220-web-icon {
+.dark-mode .burger, .dark-mode .burger-menu-close, .dark-mode .mantis-web-icon, .dark-mode .mte220-web-icon {
   filter: invert(84%) sepia(100%) saturate(0%) hue-rotate(200deg) brightness(104%) contrast(102%);
+}
+.dark-mode .headshot {
+  border-color: white;
 }
 .dark-mode .burger-menu {
   color: white;
 }
-.dark-mode .App {
+.dark-mode .app-background {
   background-color: #121212;
+}
+.dark-mode .theme-toggle {
+  color: white;
 }
 
 .light-mode .main-section-one, .light-mode .main-bio, .light-mode .main-projects, .light-mode .main-text-intro-left, .light-mode .main-bio-container, .light-mode .main-skills-container h1, .light-mode .main-skills {
   color: black;
 }
+.light-mode .app-background {
+  background-color: white;
+}
 
 .App {
   position: relative;
+}
+
+.main-text-intro-left h1 {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(90deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
+  color: transparent;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  border: solid 2px #0088a9;
+  padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+  border-radius: 10px;
 }
 
 .nav {

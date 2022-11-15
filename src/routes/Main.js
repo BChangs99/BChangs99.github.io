@@ -1,9 +1,8 @@
 import "./Main.css"
 import { useEffect, useRef } from "react"
-import { NavLink } from 'react-router-dom';
-import { handleResumeOnClick } from "../shared"
 import Skills from '../Skills.js'
 import Projects from "./Projects"
+import { AboutMe } from "./AboutMe.js";
 
 export default function Main() {
    const howdyContainerRef = useRef(null);
@@ -67,32 +66,7 @@ export default function Main() {
          </div>
          <div className="main-intro-container">
             <Skills />
-            <div className="main-bio-container">
-               <h1 className="hidden-main" ref={aboutRef}>About Me</h1>
-               <div className="main-bio">
-                  <span>Howdy Y'all &#129312;!</span> 
-                  <p>
-                     I'm Brian Chang, and I'm a recent Mechatronics graduate from the University of Waterloo.
-                  </p>
-                  <p>
-                     I started off as a self-taught web developer, but have since accrued professional work experience over the last 5 years in Co-Op positions.
-                  </p>
-                  <p>
-                  I've worked both with and without a team, and have been able to excel in many types of environments. Over the years I've worked as a developer for small startups in Canada to large corporations in Taiwan. I'm looking for an opportunity
-                  to further cultivate my current MERN (Mongo Express React Node) skillset and also to learn exciting new technologies to add to my repertoire!
-                  </p>
-                  <p>
-                     Check out some of the projects I've worked on below in detail, or if you want to skip straight to the short and good stuff, take a look at my &nbsp;
-                     <NavLink 
-                        to="/resume" 
-                        className='burger-menu-resume'
-                        onClick={handleResumeOnClick}
-                     >
-                        resume!
-                     </NavLink>
-                  </p>
-               </div>
-            </div>
+            <AboutMe />
          </div>
          <Projects />
       </div>

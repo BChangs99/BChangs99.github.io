@@ -48,7 +48,7 @@ export default function Projects() {
   return (
    <div className="main-projects">
       <h1 ref={projectsRef} className="hidden-projects">Projects</h1>
-         <div ref={ventiRef} className="hidden-projects">
+         <div ref={ventiRef} className="hidden-projects projects">
             <img src={ventiLogo} alt="ventiLogo" className='venti-logo' />
             <p className="main-projects-venti">
                Venti is a smart thermostat and vent controller designed to offer users a convenient way to control their home's heating and ventilation systems. 
@@ -69,7 +69,7 @@ export default function Projects() {
                (60 seconds). Aside from device communication, I also assisted with the user interface design, which involved the creation of a live-updating dashboard written in HTML & CSS.
             </p>
          </div>
-         <div ref={mantisRef} className="hidden-projects">
+         <div ref={mantisRef} className="hidden-projects projects">
             <div className="main-projects-mantis">
                <h2>Mantis Bug Reporter Extension</h2>
                <a href="https://github.com/BChangs99/MantisExtension"><img src={webIcon} alt="Web Link" className="mantis-web-icon"/></a>
@@ -84,7 +84,7 @@ export default function Projects() {
             </p>
             <img src={mantis} alt="Mantis Bug Tracker" className="mantis-example"/>
          </div>
-         <div ref={broadcastingPrototypeRef} className="hidden-projects">
+         <div ref={broadcastingPrototypeRef} className="hidden-projects projects">
             <h2>Broadcasting Prototype</h2>
             <p>
                This project was conducted during my second Co-Op at BenQ in Taiwan. This involved the prototyping of broadcasting capabilities to be used in BenQ's televisions. In my personal prototyping,
@@ -94,7 +94,7 @@ export default function Projects() {
                fully implemented within a month and demonstrations of its capabilities to higher management were successful. 
             </p>
          </div>
-         <div ref={connect2earthRef} className="hidden-projects">
+         <div ref={connect2earthRef} className="hidden-projects projects">
             <h2>Connect2Earth</h2>
             <p>
                This was my first ever project working as a web developer in my first co-op at Pixelbot. This project involved the implemention of a React-based social media hub dedicated to scraping Twitter, Instagram, and Facebook
@@ -104,7 +104,7 @@ export default function Projects() {
                the connect2earth event I helped develop has ended and I'm unable to share the project's code or visuals.
             </p>
          </div>
-         <div ref={videoGameReviewerRef} className="hidden-projects">
+         <div ref={videoGameReviewerRef} className="hidden-projects projects">
             <h2>Video Game Reviewer</h2>
             <p>
                This was less so a project and more so an exercise and practice for me to learn the full stack requirements of a web application. I worked on this project with a friend of mine <a href="https://github.com/LinsamuelATM">Samuel Lin</a>.
@@ -113,7 +113,7 @@ export default function Projects() {
                be managed by Redux.
             </p>
          </div>
-         <div ref={mte220CalculatorRef} className="hidden-projects">
+         <div ref={mte220CalculatorRef} className="hidden-projects projects">
             <div className="main-projects-mte220">
                <h2>MTE 220 Mark Calculator</h2>
             <a href="https://github.com/BChangs99/MTE220_Calculator"><img src={webIcon} alt="Web Link" className="mte220-web-icon"/></a>

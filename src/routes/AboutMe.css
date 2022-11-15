@@ -1,0 +1,17 @@
+.hidden-about-me {
+   opacity: 0;
+   filter: blur(15px);
+   transform: translateZ(-100%);
+   transition: all ease-in-out 1.2s;
+ }
+ 
+ .show-about-me {
+   opacity: 1;
+   filter: blur(0);
+   transform: translateZ(0%);
+ }
+
+ .about-me-container {
+   border-bottom: solid 2px #0088a9;
+   padding-bottom: 2rem;
+ }

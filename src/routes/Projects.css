@@ -46,8 +46,14 @@
    filter: blur(15px);
    transform: translateZ(-100%);
    transition: all ease-in-out 1.2s;
- }
- 
+  }
+  
+  .projects {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: dotted 6px #0088a9;
+  }
+
  .show-projects {
    opacity: 1;
    filter: blur(0);

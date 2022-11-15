@@ -2,38 +2,49 @@
 
 // A mix-in to apply all the dark mode themes
 @mixin dark-mode {
-  .main-section-one, .main-bio, .main-projects, .main-text-intro-left, .main-bio-container, .main-skills-container h1, .main-skills {
+  .main-section-one, .main-bio, .main-projects, .main-text-intro-left, .about-me-container, .main-skills-container h1, .main-skills {
     color: $white-text-color;
   }
 
   // This is to change the burger icon colour to white
   // Did this instead of messing with svgs
   // Website for finding how to filter from 1 color to another: https://codepen.io/sosuke/pen/Pjoqqp
-  .burger, .burger-menu-close .mantis-web-icon, .mte220-web-icon {
+  .burger, .burger-menu-close, .mantis-web-icon, .mte220-web-icon {
     filter: invert(84%) sepia(100%) saturate(0%) hue-rotate(200deg) brightness(104%) contrast(102%);
+  }
+
+  .headshot {
+    border-color: white;
   }
 
   .burger-menu {
     color: white;
   }
 
-  .App {
+  .app-background {
     background-color: $dark-background-color
+  }
+
+  .theme-toggle {
+    color: white;
   }
 }
 
+// Might not need this light-mode mixin
+//Already handling the pref dark scheme in js
+// Defaults to light-mode if not dark
 @mixin light-mode {
   .main-section-one, .main-bio, .main-projects, .main-text-intro-left, .main-bio-container, .main-skills-container h1, .main-skills {
     color: $black-text-color;
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  @include dark-mode;
+  .app-background {
+    background-color: $light-background-color;
+  }
 }
 
 .dark-mode {
-@include ark-mode;
+  @include dark-mode;
 }
 
 .light-mode {
@@ -42,6 +53,23 @@
 
 .App {
   position: relative;
+}
+
+.main-text-intro-left h1 {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+  color: transparent;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  border: solid 2px $main-blue;
+  padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+  border-radius: 10px;
 }
 
 .nav {

@@ -1,3 +1,8 @@
+.main-skills-container {
+  padding-bottom: 2rem;
+  border-bottom: solid 2px #0088a9;
+}
+
 .main-skills {
   list-style: none;
   width: 100%;
