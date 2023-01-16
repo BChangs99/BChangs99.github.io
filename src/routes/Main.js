@@ -15,7 +15,7 @@ export default function Main() {
    const options = {
       root: null, // relative to document viewport
       rootMargin: "0px", // margin around root. Values are similar to css property. Unitless values not allowed
-      threshold: 0.5 // visible amount of item shown in relation to root
+      threshold: 0.4 // visible amount of item shown in relation to root
    }
 
    // Move keyframe animations into this file to attach on scroll

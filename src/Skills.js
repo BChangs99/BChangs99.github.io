@@ -17,7 +17,7 @@ export default function Skills() {
       rootMargin: "0px", // margin around root. Values are similar to css property. Unitless values not allowed
       // 0.36 is the most threshold can take because we slide the actual element off the screen
       // so any more and it's not enough threshold
-      threshold: 0.36 // visible amount of item shown in relation to root
+      threshold: 0 // visible amount of item shown in relation to root
    }
 
    const SkillsSection = [

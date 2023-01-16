@@ -14,6 +14,19 @@
   line-height: 2;
 }
 
+@media only screen and (min-width: 2000px) {
+  .headshot {
+    max-width: 25%;
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  .headshot {
+    min-width: 340px;
+    max-width: 340px;
+  }
+}
+
 .headshot {
   background-image: url("../assets/headshot.webp");
   background-size: cover;
