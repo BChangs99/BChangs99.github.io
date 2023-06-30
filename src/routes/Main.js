@@ -65,8 +65,9 @@ export default function Main() {
             </div>
          </div>
          <div className="main-intro-container">
-            <Skills />
             <AboutMe />
+            <div className="main-intro-divider"></div>
+            <Skills />
          </div>
          <Projects />
       </div>

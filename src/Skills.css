@@ -1,6 +1,15 @@
+@media only screen and (max-width: 1350px) {
+  .main-skills-container {
+    width: 100% !important;
+    border-top: none !important;
+  }
+ }
+
 .main-skills-container {
   padding-bottom: 2rem;
   border-bottom: solid 2px #0088a9;
+  border-top: solid 2px #0088a9;
+  width: 50%;
 }
 
 .main-skills {

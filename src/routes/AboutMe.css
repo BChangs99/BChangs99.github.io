@@ -14,4 +14,12 @@
  .about-me-container {
    border-bottom: solid 2px #0088a9;
    padding-bottom: 2rem;
+   width: 50%;
+   border-top: solid 2px #0088a9;
+ }
+
+ @media only screen and (max-width: 1350px) {
+  .about-me-container {
+    width: 100%;
+  }
  }

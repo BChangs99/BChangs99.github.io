@@ -45,6 +45,9 @@ export default function Projects() {
       }
    }, [projectsRef, ventiRef, mantisRef, broadcastingPrototypeRef, connect2earthRef, videoGameReviewerRef, mte220CalculatorRef, options])
 
+
+   // ToDo
+   // Make projects section look better -- too big rn
   return (
    <div className="main-projects">
       <h1 ref={projectsRef} className="hidden-projects">Projects</h1>

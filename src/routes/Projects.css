@@ -51,7 +51,7 @@
   .projects {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    border-bottom: dotted 6px #0088a9;
+    border-bottom: solid 0.2rem #0088a9;
   }
 
  .show-projects {

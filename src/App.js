@@ -9,6 +9,7 @@ import { handleResumeOnClick } from './shared';
 function App() {
   usePageTracking();
 
+  // This defaults the dark mode to the user's system preference
   const darkModeInitialState = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [darkMode, setDarkMode] = useState(darkModeInitialState);
 
@@ -20,13 +21,15 @@ function App() {
     <div className={darkMode ? "App dark-mode" : "App light-mode"}>
       {/* Created another div w/ classname app-background for hacky way to invert background color */}
       <div className="app-background">
-        <Burger />
-        <BurgerMenu handleResumeOnClick={handleResumeOnClick} />
-        <div 
-          className="theme-toggle"
-          onClick={toggleDarkMode}
-        >
-          {darkMode ? "Light Mode" : "Dark Mode"}
+        <div className='app-header'>
+          <Burger />
+          <BurgerMenu handleResumeOnClick={handleResumeOnClick} />
+          <div 
+            className="theme-toggle"
+            onClick={toggleDarkMode}
+          >
+            {darkMode ? "Light Mode" : "Dark Mode"}
+          </div>
         </div>
         {/* <nav className="nav">
           <NavLink 
