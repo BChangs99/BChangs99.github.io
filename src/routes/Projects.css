@@ -1,14 +1,24 @@
 .venti-logo {
    text-align: center;
-   width: 50vw;
+   width: 25vw;
  }
  
  .venti-physical {
-   width: 60vw;
+   width: 30vw;
    display: block;
    margin-left: auto;
    margin-right: auto;
    border: solid black 1px;
+ }
+
+ /* Make a grid 2 columns x rows evenly width and variable height and spaced */
+ /* Add a diving border between 2 columns coloured black */
+ .main-projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
  }
 
  .main-projects {
@@ -34,11 +44,11 @@
  }
  
  .mantis-example {
-   width: 70vw;
+   width: 35vw;
    display: block;
    margin-left: auto;
    margin-right: auto;
-   border: solid #0088a9 3px;
+   border: solid #3C7A89 3px;
  }
 
  .hidden-projects {
@@ -51,7 +61,7 @@
   .projects {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    border-bottom: solid 0.2rem #0088a9;
+    border-bottom: solid 0.2rem #3C7A89;
   }
 
  .show-projects {
@@ -59,3 +69,28 @@
    filter: blur(0);
    transform: translateZ(0%);
  }
+
+
+ /* For window sizes width less than 900px  */
+
+  @media only screen and (max-width: 900px) {
+    .main-projects-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .main-projects {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+    .mantis-example {
+      width: 80vw;
+    }
+    .venti-physical {
+      width: 80vw;
+    }
+    .venti-logo {
+      width: 50vw;
+    }
+  }

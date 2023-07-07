@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Burger.css"
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
 export const Burger = () => {
    function burgerOnClick() {
@@ -12,10 +13,10 @@ export const Burger = () => {
 
 
   return (
-    <div 
+    <MenuOpenIcon 
       className="burger"
+      sx={{ fontSize: 40 }}
       onClick={burgerOnClick}
-    >
-    </div>
+    />
   )
 }

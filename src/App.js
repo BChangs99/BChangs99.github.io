@@ -1,10 +1,11 @@
 import './App.css';
 import { useState } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import usePageTracking from './usePageTracking';
 import { Burger } from './Burger';
 import BurgerMenu from './BurgerMenu';
 import { handleResumeOnClick } from './shared';
+import Switch from '@mui/material/Switch';
 
 function App() {
   usePageTracking();
@@ -17,6 +18,9 @@ function App() {
     setDarkMode(!darkMode);
   };
 
+  // ToDo
+  //Extrapolate header into own component
+  // Organize components by atom, molecule, etc.
   return (
     <div className={darkMode ? "App dark-mode" : "App light-mode"}>
       {/* Created another div w/ classname app-background for hacky way to invert background color */}
@@ -24,18 +28,19 @@ function App() {
         <div className='app-header'>
           <Burger />
           <BurgerMenu handleResumeOnClick={handleResumeOnClick} />
-          <div 
-            className="theme-toggle"
-            onClick={toggleDarkMode}
-          >
-            {darkMode ? "Light Mode" : "Dark Mode"}
+          <div className="theme-toggle">
+            <Switch 
+              onClick={toggleDarkMode}
+            >
+              {darkMode ? "Light Mode" : "Dark Mode"}
+            </Switch>
           </div>
         </div>
-        {/* <nav className="nav">
+        {/* <nv className="nav">
           <NavLink 
             style={(isActive) => {
               return { 
-                color: isActive.isActive ? "#0088a9" : "inherit"
+                color: isActive.isActive ? "#3C7A89" : "inherit"
               }
             }}
             to="/" 
@@ -49,7 +54,7 @@ function App() {
           <NavLink 
             style={(isActive) => {
               return { 
-                color: isActive.isActive ? "#0088a9" : "inherit"
+                color: isActive.isActive ? "#3C7A89" : "inherit"
               }
             }}
             to="/resume" 
