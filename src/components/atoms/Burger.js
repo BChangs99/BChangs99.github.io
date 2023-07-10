@@ -2,7 +2,7 @@ import React from 'react'
 import "./Burger.css"
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
-export const Burger = () => {
+export default function Burger () {
    function burgerOnClick() {
       // onclick toggle burger menu to slide from the whole left side of the scree
       let burgerMenuOverlay = document.querySelector(".burger-menu-overlay");

@@ -1,9 +1,9 @@
 import "./Main.css"
 import { useEffect, useRef } from "react"
-import Skills from '../Skills.js'
-import Projects from "./Projects"
-import Waves from "../Waves.js"
-import { AboutMe } from "./AboutMe.js";
+import Skills from '../organisms/Skills.js'
+import Projects from "../organisms/Projects"
+import Waves from "../organisms/Waves.js"
+import { AboutMe } from "../organisms/AboutMe";
 
 export default function Main() {
    const howdyContainerRef = useRef(null);

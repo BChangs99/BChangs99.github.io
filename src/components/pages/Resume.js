@@ -1,5 +1,5 @@
-import resume from '../assets/BrianChang_Resume08292022.jpg'
-import downloadButton from '../assets/download.webp'
+import resume from '../../assets/BrianChang_Resume08292022.jpg'
+import downloadButton from '../../assets/download.webp'
 import './Resume.css'
 import ReactGA from 'react-ga';
 

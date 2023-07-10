@@ -1,13 +1,7 @@
-@import "../colors";
-
 .main {
   display: block;
   height: 100%;
   width: 100%;
-  p {
-    font-size: 1rem;
-    line-height: 2;
-  }
   /* Styles for web version */
   /* padding-left: 300px;
   padding-right: 300px; */
@@ -15,9 +9,36 @@
   border-right: 5px solid #3C7A89;
   border-image: linear-gradient(rgba(2,0,36,1) 0%, rgba(32,32,181,1) 22%, rgba(0,136,169,1) 81%) 1; */
 }
+.main p {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+@media only screen and (min-width: 2000px) {
+  .headshot {
+    max-width: 25%;
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  .headshot {
+    min-width: 340px;
+    max-width: 340px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .main-intro-container {
+    flex-direction: column !important;
+  }
+
+  .main-intro-divider {
+    display: none;
+  }
+}
 
 .headshot {
-  background-image: url("../assets/headshot.webp");
+  background-image: url("../../assets/headshot.webp");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -47,7 +68,6 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 2rem;
-  border-bottom: solid $main-blue;
   margin-right: 1rem;
   margin-left: 1rem;
   text-align: center;
@@ -55,25 +75,19 @@
 
 .main-text-intro {
   text-align: center;
-
-  h2 {
-    &:nth-child(1) {
-      transition-delay: 100ms;
-    }
-
-    &:nth-child(2) {
-      transition-delay: 150ms;
-    }
-
-    &:nth-child(3) {
-      transition-delay: 200ms;
-    }
-  }
+}
+.main-text-intro h2:nth-child(1) {
+  transition-delay: 100ms;
+}
+.main-text-intro h2:nth-child(2) {
+  transition-delay: 150ms;
+}
+.main-text-intro h2:nth-child(3) {
+  transition-delay: 200ms;
 }
 
 .main-img {
   text-align: center;
-  width: 60vw;
   height: 40vh;
 }
 
@@ -81,10 +95,9 @@
   padding-left: 3rem;
   padding-right: 3rem;
   text-align: center;
-
-  h2 {
-    text-align: center;
-  }
+}
+.main-projects h2 {
+  text-align: center;
 }
 
 .main-projects-mantis,
@@ -105,12 +118,12 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: solid $main-blue 3px;
+  border: solid #3C7A89 3px;
 }
 
 .main-intro-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 1.25rem;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -118,8 +131,8 @@
 }
 
 .main-intro-divider {
-  width: 0.25rem;
-  background-color: $main-blue;
+  width: 0.20rem;
+  background-color: #3C7A89;
   margin-top: 1.875rem;
   margin-bottom: 1.875rem;
   margin-left: 1.563rem;
@@ -140,3 +153,5 @@
 }
 
 /*# sourceMappingURL=main.scss.map */
+
+/*# sourceMappingURL=main.css.map */

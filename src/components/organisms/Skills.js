@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Skillbar } from './Skillbar';
+import { Skillbar } from '../../components/atoms/Skillbar';
 import "./skills.css"
 
 export default function Skills() {

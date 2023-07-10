@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react"
 import { NavLink } from 'react-router-dom';
-import { handleResumeOnClick } from "../shared"
+import { handleResumeOnClick } from "../../shared"
 import "./AboutMe.css"
 
 export const AboutMe = () => {

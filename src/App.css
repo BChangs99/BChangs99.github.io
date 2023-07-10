@@ -1,54 +1,31 @@
-.dark-mode .main-section-one, .dark-mode .main-bio, .dark-mode .main-projects, .dark-mode .main-text-intro-left, .dark-mode .about-me-container, .dark-mode .main-skills-container h1, .dark-mode .main-skills {
+.dark-mode .main-section-one, 
+.dark-mode .main-bio,
+.dark-mode .main-projects,
+.dark-mode .main-text-intro-left,
+.dark-mode .about-me-container,
+.dark-mode .main-skills-container h1, 
+.dark-mode .main-skills {
   color: #f5f5f5;
 }
+/* Makes icons white */
 .dark-mode .burger, .dark-mode .burger-menu-close, .dark-mode .mantis-web-icon, .dark-mode .mte220-web-icon {
   filter: invert(84%) sepia(100%) saturate(0%) hue-rotate(200deg) brightness(104%) contrast(102%);
 }
+
 .dark-mode .headshot {
   border-color: #f5f5f5;
 }
-.dark-mode .burger-menu {
-  color: #f5f5f5;
-}
+
 .dark-mode .app-background {
   background-color: #121212;
 }
 
-.dark-mode .app-header {
-  background-color: #855A5C
-}
-
-.dark-mode .app-header a {
-  color: white;
-}
-
-.dark-mode .footer {
-  background-color: #121212;
-  color: #f5f5f5;
-}
-
-.dark-mode .theme-toggle {
-  color: #f5f5f5;
-}
-
-.light-mode .main-section-one, .light-mode .main-bio, .light-mode .main-projects, .light-mode .main-text-intro-left, .light-mode .main-bio-container, .light-mode .main-skills-container h1, .light-mode .main-skills {
-  color: black;
-}
-.light-mode .app-background {
+.app-background {
   background-color: #f5f5f5;
 }
 
 .App {
   position: relative;
-}
-
-@media only screen and (min-width: 400px) {
-  .App {
-    /* border-left: solid 1vw #3C7A89;
-    border-right: solid 1vw #3C7A89; */
-    /* border-left: 100px;
-    border-right: 100px; */
-  }
 }
 
 .main-text-intro-left h1 {
@@ -66,126 +43,6 @@
   }
   to {
     background-position: -200% center;
-  }
-}
-.theme-toggle {
-  margin: 1rem;
-  color: #f5f5f5;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: 80px;
-  border-bottom: solid black 3px;
-  margin-bottom: 3.125rem;
-  vertical-align: middle;
-  font-size: 1.5rem;
-  position: sticky;
-  top: 0;
-  background-color: white;
-}
-
-.nav-link-home {
-  margin-right: auto;
-  text-decoration: none;
-  padding: 0.313rem;
-}
-
-.nav-links-others {
-  padding: 0 0.625rem 0 0.625rem;
-  text-decoration: none;
-  transition: all 0.3s ease 0s;
-}
-
-.nav-link:hover {
-  box-shadow: 0 0 10px #3C7A89;
-  color: #3C7A89;
-  border-radius: 20px;
-}
-
-.nav-link:link,
-.nav-link:visited {
-  color: inherit;
-}
-
-.nav-linkedin {
-  width: 30px;
-  margin-right: 0.625rem;
-}
-
-.nav-linkedin:hover,
-.nav-github:hover {
-  box-shadow: 0 0 10px #3C7A89;
-}
-
-.nav-github {
-  width: 30px;
-}
-
-.nav-breaker {
-  background-color: black;
-  width: 2px;
-  height: 50px;
-  margin: 0rem 0.625rem 0rem 0.625rem;
-}
-
-.footer {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 15vh;
-  margin-top: 3.125rem;
-  vertical-align: middle;
-  font-size: 1.5rem;
-  background-color: #f5f5f5;
-  color: black;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding-top: 1rem;
-}
-
-.footer-text-links {
-  font-size: 0.75rem;
-}
-
-.footer-text-links a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.app-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  background-color: #93827F;
-  height: 7vh;
-  top: 0;
-  opacity: 0.98;
-  /* b/c about me and skills are above for some reason */
-  z-index: 100;
-}
-
-.app-header-contact {
-  margin-top: 0.25rem;
-  margin-left: 1.25rem;
-}
-
-.app-header a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.app-header a svg {
-  font-size: 2.5rem;
-}
-
-/* screen height less than 800px then set app-header min-width to 8vh */
-@media screen and (max-height: 800px) {
-  .app-header {
-    min-height: 70px;
   }
 }
 

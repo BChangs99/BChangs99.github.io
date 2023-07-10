@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react'
-import ventiLogo from '../assets/ventilogo.webp'
-import ventiPhysical from '../assets/ventiphysical.webp'
-import webIcon from '../assets/internet.webp'
-import mantis from '../assets/Mantis.webp'
+import ventiPhysical from '../../assets/ventiphysical.webp'
+import webIcon from '../../assets/internet.webp'
+import mantis from '../../assets/Mantis.webp'
 import { useRef } from 'react'
 import "./Projects.css"
 
@@ -77,7 +76,6 @@ export default function Projects() {
                   <h2>Mantis Bug Reporter Extension</h2>
                   {/* <a href="https://github.com/BChangs99/MantisExtension"><img src={webIcon} alt="Web Link" className="mantis-web-icon"/></a> */}
                <p>
-               <p>
                   During my Co-Op experience at BenQ in Taiwan, I spearheaded an exciting project aimed at enhancing the bug tracking capabilities of the quality assurance team. 
                   From the very outset, starting with the initial design stage, planning, and design mockups, I was entrusted with complete authority and accountability for the entire project.
                   The culmination of my efforts was the development of a cutting-edge Chrome extension that revolutionized the process of reporting bugs to our internal bug tracking system, Mantis. 
@@ -93,7 +91,6 @@ export default function Projects() {
                   To realize this project, I employed React, a powerful and popular JavaScript library, enabling the development of a highly responsive and dynamic user interface. 
                   The extension itself was a pure front-end application, seamlessly integrating with Chrome's extensions ecosystem to deliver a seamless user experience.
                   Overall, my Co-Op project at BenQ enabled me to take charge of the entire development process, from conception to deployment, resulting in a sophisticated Chrome extension that significantly accelerated the quality assurance team's bug tracking capabilities.
-               </p>
                </p>
                <img src={mantis} alt="Mantis Bug Tracker" className="mantis-example"/>
             </div>

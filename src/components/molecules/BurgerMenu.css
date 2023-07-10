@@ -40,7 +40,7 @@
    background-size: 1.75rem 1.75rem;
    padding: 1.5rem;
    background-repeat: no-repeat;
-   background-image: url("./assets/close.webp");
+   background-image: url("../../assets/close.webp");
    background-position: center;   
    border: transparent 2px white;
    border-radius: 100px;
