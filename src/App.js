@@ -6,6 +6,9 @@ import { Burger } from './Burger';
 import BurgerMenu from './BurgerMenu';
 import { handleResumeOnClick } from './shared';
 import Switch from '@mui/material/Switch';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 
 function App() {
   usePageTracking();
@@ -21,6 +24,7 @@ function App() {
   // ToDo
   //Extrapolate header into own component
   // Organize components by atom, molecule, etc.
+  // Add Github, email, linkedin in header
   return (
     <div className={darkMode ? "App dark-mode" : "App light-mode"}>
       {/* Created another div w/ classname app-background for hacky way to invert background color */}
@@ -28,6 +32,11 @@ function App() {
         <div className='app-header'>
           <Burger />
           <BurgerMenu handleResumeOnClick={handleResumeOnClick} />
+          <div className="app-header-contact">
+            <a href="https://www.linkedin.com/in/brianchangtron/"><LinkedInIcon/></a>
+            <a href="https://www.github.com/BChangs99"><GitHubIcon/></a>
+            <a href="mailto:bchangs778@gmail.com"><EmailIcon/></a>
+          </div>
           <div className="theme-toggle">
             <Switch 
               onClick={toggleDarkMode}

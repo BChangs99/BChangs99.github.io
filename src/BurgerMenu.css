@@ -15,11 +15,19 @@
    left: 0;
    z-index: 0;
    background-color: #3C7A89;
-   width: 65%;
+   width: 20%;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+}
+
+/* screen width less than 1200 px */
+
+@media screen and (max-width: 1200px) {
+   .burger-menu {
+      width: 100%;
+   }
 }
 
 
