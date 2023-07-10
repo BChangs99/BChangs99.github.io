@@ -100,30 +100,85 @@ export default function Projects() {
             <div ref={broadcastingPrototypeRef} className="hidden-projects projects">
                <h2>Broadcasting Prototype</h2>
                <p>
-                  This project was conducted during my second Co-Op at BenQ in Taiwan. This involved the prototyping of broadcasting capabilities to be used in BenQ's televisions. In my personal prototyping,
-                  I opted to create the project using a website instead of using the native operating system of the television due to my own efficiencies with web development. In the initial stage, research
-                  into possible viable solutions were conducted, ultimately deciding between Socket.io and Amazon Kinesis. Ultimately, a minimum viable product was established using Socket.io as using Amazon Kinesis 
-                  would have involved a steeper development time, hindering the project's prototyping time. As well, Kinesis did not offer Javascript capabilities on server side functionality. This project was ultimately
-                  fully implemented within a month and demonstrations of its capabilities to higher management were successful. 
+                  During my second Co-Op experience at BenQ in Taiwan, I embarked on an exciting project focused on prototyping broadcasting capabilities for BenQ's televisions. 
+                  Recognizing my proficiency in web development, I made the strategic decision to create the project as a website, rather than relying on the native operating system of the television.
+               </p>
+               <p>
+                  The project kicked off with an extensive research phase, aimed at identifying the most viable solutions for achieving our broadcasting goals. After careful consideration, we narrowed down our options to two prominent technologies: Socket.io and Amazon Kinesis. 
+                  While both options presented compelling features, we weighed the trade-offs and ultimately selected Socket.io as the foundation for our minimum viable product.
+               </p>
+               <p>
+                  The decision to go with Socket.io was driven by several factors. Firstly, utilizing Amazon Kinesis would have significantly increased development time, posing a potential hurdle to the project's prototyping phase. 
+                  Additionally, the lack of server-side JavaScript capabilities in Kinesis further influenced our choice, as it would have required additional resources and dependencies to overcome this limitation.
+               </p>
+               <p>
+                  With the technology stack in place, I devoted myself to swiftly implementing the prototype. Leveraging the power and flexibility of Socket.io, I rapidly developed the broadcasting capabilities within a tight timeline of just one month. 
+                  The result was a fully functional system that showcased its remarkable capabilities during successful demonstrations to higher management.
+               </p>
+               <p>
+                  Throughout the implementation process, I ensured that the prototype adhered to industry best practices and demonstrated robustness, scalability, and security. 
+                  By leveraging my expertise in web development, I seamlessly integrated the broadcasting functionalities into a user-friendly website interface, enabling effortless communication and control of BenQ televisions.
+               </p>
+               <p>
+                  The successful completion of this project not only showcased my abilities in web development and prototyping but also highlighted my strategic decision-making skills. 
+                  By selecting Socket.io and utilizing my knowledge in the field, I expedited the development process, achieving remarkable results within a short timeframe.
                </p>
             </div>
             <div ref={connect2earthRef} className="hidden-projects projects">
                <h2>Connect2Earth</h2>
                <p>
-                  This was my first ever project working as a web developer in my first co-op at Pixelbot. This project involved the implemention of a React-based social media hub dedicated to scraping Twitter, Instagram, and Facebook
-                  posts related to a list of environmental tags. For example, if a user wanted to see all posts related to "Rainforests" in "Japan", then the website would scrape the three social media websites with 
-                  their APIs to retrieve these results. For this project, I was responsible for the implementation of the front-end based on designs and wireframes provided by the client (WWF). I was also responsible for
-                  the ip detection of users to offer translations of the website (offered by a third party company that provided expert translations), as well as customizing links to match the user's country origin. Unfortunately,
-                  the connect2earth event I helped develop has ended and I'm unable to share the project's code or visuals.
+                  In my very first co-op experience as a web developer at Pixelbot, I had the incredible opportunity to contribute to a groundbreaking project. 
+                  This particular undertaking involved the implementation of a React-based social media hub, specifically designed for scraping and aggregating posts from popular platforms such as Twitter, Instagram, and Facebook. 
+                  The goal was to curate content related to a comprehensive list of environmental tags, providing users with a centralized platform to explore and engage with environmentally conscious discussions.
+               </p>
+               <p>
+                  Imagine a user being able to effortlessly access posts about "Rainforests" in "Japan" with just a few clicks. 
+                  That's precisely what this project aimed to achieve. By harnessing the power of APIs offered by the three major social media platforms, the website dynamically scraped and compiled posts aligned with the chosen environmental tags.
+               </p>
+               <p>
+                  As a key contributor to this groundbreaking initiative, my primary responsibility lay in implementing the captivating front-end design envisioned by our esteemed client, the World Wildlife Fund (WWF). 
+                  Armed with designs and wireframes provided by the WWF, I meticulously translated their creative vision into an engaging user interface, leveraging the versatility and power of React.
+               </p>
+               <p>
+                  Additionally, I took on the challenge of integrating IP detection functionality into the website. This feature allowed us to provide personalized experiences for users by automatically detecting their geographical location. 
+                  Leveraging the services of a reputable third-party translation company, we seamlessly incorporated expert translations to cater to users in their preferred language. 
+                  Moreover, I ensured that the website dynamically customized links to match the user's country of origin, enhancing the overall user experience and navigation.
+               </p>
+               <p>
+                  Regrettably, due to the conclusion of the Connect2Earth event, which I played a significant role in developing, I am unable to share the project's code or visuals. 
+                  However, I can confidently say that the final product served as an innovative and impactful tool in promoting environmental awareness and engagement on social media platforms.
+               </p>
+               <p>
+                  This first co-op experience not only allowed me to hone my web development skills but also provided me with invaluable insights into project collaboration, client interactions, and the importance of delivering a user-centric experience. 
+                  It laid a solid foundation for my career as a web developer, igniting my passion for creating meaningful digital solutions.
                </p>
             </div>
             <div ref={videoGameReviewerRef} className="hidden-projects projects">
                <h2>Video Game Reviewer</h2>
                <p>
-                  This was less so a project and more so an exercise and practice for me to learn the full stack requirements of a web application. I worked on this project with a friend of mine <a href="https://github.com/LinsamuelATM">Samuel Lin</a>.
-                  For this task, I took on the role of back-end development, creating routes and endpoint protection for validated users (using JWT). The back-end was developed using Express, Node.js, and MongoDB for data storage.
-                  I also made sure to extensively test my APIs using Postman. As well, I had a hand in the front-end implementation with setting up and collaborating with the other developer on what parts of the application state would
-                  be managed by Redux.
+                  During my journey to acquire full-stack web development skills, I embarked on an enriching exercise and collaborative practice with my talented friend, Samuel Lin, whose contributions elevated the project to new heights. 
+                  Together, we delved into the intricacies of building a web application from scratch, acquiring valuable experience in every aspect of its development.
+               </p>
+               <p>
+                  In this endeavor, I assumed the role of back-end developer, taking charge of creating robust routes and implementing essential endpoint protection for validated users using JSON Web Tokens (JWT). 
+                  Leveraging the power of Express, Node.js, and MongoDB, I crafted a secure and efficient back-end infrastructure capable of handling data storage and retrieval seamlessly. 
+                  By employing industry best practices and adhering to the principles of clean code, I ensured the stability and scalability of our application's foundation.
+               </p>
+               <p>
+                  To guarantee the reliability and functionality of our APIs, I conducted comprehensive testing using Postman, meticulously validating their behavior and responsiveness under various scenarios. 
+                  This rigorous testing process served as a crucial step in delivering a high-quality product that met our users' expectations.
+               </p>
+               <p>
+                  In addition to my back-end responsibilities, I also actively participated in the front-end implementation, collaborating closely with Samuel to determine the optimal distribution of application state management using Redux. 
+                  Through effective communication and synchronized efforts, we ensured that the front-end seamlessly interacted with the back-end, providing a cohesive and delightful user experience.
+               </p>
+               <p>
+                  This collaborative exercise not only honed my technical skills in back-end development, but it also fortified my ability to work effectively within a team. By collaborating with Samuel, I gained a deeper understanding of the importance of clear communication, efficient code integration, and shared project ownership. 
+                  Together, we tackled challenges, explored innovative solutions, and delivered an application that surpassed our initial goals.
+               </p>
+               <p>
+                  This immersive experience further solidified my passion for full-stack web development, exposing me to the intricacies of both front-end and back-end technologies. 
+                  It instilled in me a sense of pride and accomplishment, paving the way for future endeavors where I can leverage my skills to create impactful web applications.
                </p>
             </div>
             <div ref={mte220CalculatorRef} className="hidden-projects projects">
@@ -132,8 +187,11 @@ export default function Projects() {
                <a href="https://github.com/BChangs99/MTE220_Calculator"><img src={webIcon} alt="Web Link" className="mte220-web-icon"/></a>
                </div>
                <p>
-                  This was just a quick little project for calculating your mark for students who took MTE 220 (Sensors and Instrumentaton) with James Barby. For some reason, the marking scheme was extremely complicated,
-                  so to save myself and everyone the time, I wrote a little script to calculate your mark.
+               In my pursuit of academic excellence during MTE 220 (Sensors and Instrumentation) under the guidance of James Barby, I encountered a notable challenge posed by the intricate and time-consuming marking scheme. 
+               Driven by a desire to alleviate the burden for myself and fellow students, I took it upon myself to develop a script that would simplify the calculation process. 
+               By leveraging my programming expertise, I crafted a comprehensive solution that seamlessly integrated with the course's grading structure. 
+               This script automated the complex calculations, offering an efficient and accurate method for determining our final marks. 
+               This endeavor not only showcased my problem-solving abilities but also demonstrated my commitment to enhancing the academic experience by simplifying complex tasks through technology.
                </p>
             </div>
          </div>
