@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.305d0830.css",
-    "main.js": "/static/js/main.ec88d701.js",
+    "main.css": "/static/css/main.59574d64.css",
+    "main.js": "/static/js/main.b5f8c002.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/BrianChang_Resume08292022.jpg": "/static/media/BrianChang_Resume08292022.6d2649c3eab9f5ac0ec1.jpg",
     "static/media/headshot.webp": "/static/media/headshot.bb503761f1971f57b1e8.webp",
     "static/media/Mantis.webp": "/static/media/Mantis.79776dbceaf58f4b293c.webp",
     "static/media/ventiphysical.webp": "/static/media/ventiphysical.72fe632ae55164144188.webp",
-    "static/media/ventilogo.webp": "/static/media/ventilogo.ebaff1a94da8bf9a7406.webp",
     "static/media/internet.webp": "/static/media/internet.0b734fb93ae5dfd83953.webp",
     "static/media/close.webp": "/static/media/close.2a05b15ad30a718e78da.webp",
     "static/media/download.webp": "/static/media/download.9c60fca75451b7a716e1.webp",
     "index.html": "/index.html",
-    "main.305d0830.css.map": "/static/css/main.305d0830.css.map",
-    "main.ec88d701.js.map": "/static/js/main.ec88d701.js.map",
+    "main.59574d64.css.map": "/static/css/main.59574d64.css.map",
+    "main.b5f8c002.js.map": "/static/js/main.b5f8c002.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.305d0830.css",
-    "static/js/main.ec88d701.js"
+    "static/css/main.59574d64.css",
+    "static/js/main.b5f8c002.js"
   ]
 }
