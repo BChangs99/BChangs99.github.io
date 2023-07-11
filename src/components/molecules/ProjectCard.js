@@ -14,11 +14,10 @@ export default function ProjectCard(props) {
    };
 
   return (
-   <Card className="main-projects-card">
+   <Card className="main-projects-card" onClick={handleExpandClick}>
       <CardHeader title={props.title} subheader={props.subHeading} />
       <ExpandMore
          expand={expanded}
-         onClick={handleExpandClick}
          aria-expanded={expanded}
          aria-label="show more"
       >
