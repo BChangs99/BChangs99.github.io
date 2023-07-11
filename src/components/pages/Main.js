@@ -2,7 +2,6 @@ import "./Main.css"
 import { useEffect, useRef } from "react"
 import Skills from '../organisms/Skills.js'
 import Projects from "../organisms/Projects"
-import Waves from "../organisms/Waves.js"
 import { AboutMe } from "../organisms/AboutMe";
 
 export default function Main() {
@@ -52,20 +51,18 @@ export default function Main() {
    return (
       <div className="main">
             <div ref={howdyContainerRef} className="main-section-one hidden-main">
-               <Waves>
-                  <div className="main-text-intro-left">
-                     <h1>Howdy!</h1>
-                     <h2>I'm Brian Chang</h2>
-                  </div>
-                  <div className="main-img">
-                     <div className='headshot'></div>
+               <div className="main-text-intro-left">
+                  <h1>Howdy!</h1>
+                  <h2>I'm Brian Chang</h2>
                </div>
-                  <div className="main-text-intro">
-                     <h2 ref={introSpielRef1} className="hidden-main">Web Developer</h2>
-                     <h2 ref={introSpielRef2} className="hidden-main">Mechatronics Engineer</h2>
-                     <h2 ref={introSpielRef3} className="hidden-main">Based in Vancouver</h2>
-                  </div>
-               </Waves>
+               <div className="main-img">
+                  <div className='headshot'></div>
+            </div>
+               <div className="main-text-intro">
+                  <h2 ref={introSpielRef1} className="hidden-main">Web Developer</h2>
+                  <h2 ref={introSpielRef2} className="hidden-main">Mechatronics Engineer</h2>
+                  <h2 ref={introSpielRef3} className="hidden-main">Based in Vancouver</h2>
+               </div>
             </div>
          <div className="main-intro-container">
             <AboutMe />

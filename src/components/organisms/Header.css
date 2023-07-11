@@ -8,7 +8,7 @@
    top: 0;
    opacity: 0.98;
    /* b/c about me and skills are above for some reason */
-   z-index: 100;
+   z-index: 1;
  }
  
  .app-header a {

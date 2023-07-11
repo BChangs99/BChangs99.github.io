@@ -4,10 +4,10 @@ function Waves(props) {
   return (
     <div>
       <section>
-        <div class='air air1'></div>
-        <div class='air air2'></div>
-        <div class='air air3'></div>
-        <div class='air air4'></div>
+        <div className='air air1'></div>
+        <div className='air air2'></div>
+        <div className='air air3'></div>
+        <div className='air air4'></div>
       </section>
       {props.children}
     </div>

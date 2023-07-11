@@ -77,14 +77,12 @@
     .main-projects-container {
       grid-template-columns: 1fr;
       grid-template-rows: auto;
-      margin-left: 1rem;
-      margin-right: 1rem;
     }
     .mantis-example {
-      width: 80vw;
+      width: 100%;
     }
     .venti-physical {
-      width: 80vw;
+      width: 100%;
     }
     .venti-logo {
       width: 50vw;
