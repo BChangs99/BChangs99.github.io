@@ -8,7 +8,7 @@
   color: #f5f5f5;
 }
 /* Makes icons white */
-.dark-mode .burger, .dark-mode .burger-menu-close, .dark-mode .mantis-web-icon, .dark-mode .mte220-web-icon {
+.dark-mode .burger, .dark-mode .burger-menu-close, .dark-mode .mantis-web-icon {
   filter: invert(84%) sepia(100%) saturate(0%) hue-rotate(200deg) brightness(104%) contrast(102%);
 }
 
