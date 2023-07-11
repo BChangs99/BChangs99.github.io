@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.1bebf604.css",
+    "main.css": "/static/css/main.fb40c594.css",
     "main.js": "/static/js/main.c1a9c9d3.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/BrianChang_Resume08292022.jpg": "/static/media/BrianChang_Resume08292022.6d2649c3eab9f5ac0ec1.jpg",
@@ -11,12 +11,12 @@
     "static/media/close.webp": "/static/media/close.2a05b15ad30a718e78da.webp",
     "static/media/download.webp": "/static/media/download.9c60fca75451b7a716e1.webp",
     "index.html": "/index.html",
-    "main.1bebf604.css.map": "/static/css/main.1bebf604.css.map",
+    "main.fb40c594.css.map": "/static/css/main.fb40c594.css.map",
     "main.c1a9c9d3.js.map": "/static/js/main.c1a9c9d3.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bebf604.css",
+    "static/css/main.fb40c594.css",
     "static/js/main.c1a9c9d3.js"
   ]
 }
