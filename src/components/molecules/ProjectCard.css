@@ -1,3 +1,6 @@
+.dark-mode .main-projects-card {
+   background: #f5f5f5 !important;
+}
 
 .main-projects-card {
    border-radius: 1rem !important;
