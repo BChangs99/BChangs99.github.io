@@ -1,0 +1,73 @@
+.dark-mode .experience-line-date {
+   color: #f5f5f5;
+}
+
+.dark-mode .experience-card {
+   background: #f5f5f5 !important;
+}
+
+.experience-line {
+   border-radius: 2rem;
+   height: 0.5rem;
+   background-color: #9B6A6C;
+}
+
+.experience-line-date {
+   font-size: 1.5rem;
+   font-weight: 600;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+
+.right-line-date {
+   padding-left: 1rem;
+}
+
+.left-line-date {
+   padding-right: 1rem;
+}
+
+.experience-line-container {
+   display: flex;
+   flex-direction: column;
+   /* when mobile width is 20vw */
+   @media screen and (max-width: 768px) {
+      width: 25vw;
+   }
+}
+
+.right-line-container {
+   margin-right: 1rem;
+}
+
+.left-line-container {
+   margin-left: 1rem;
+}
+
+.experience-card-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: end;
+   align-items: center;
+   scroll-margin-top: 8rem;
+}
+
+.left-card-container {
+   margin-right: -0.25rem;
+   margin-left: auto;
+   margin-bottom: 5rem;
+}
+
+.right-card-container {
+   margin-left: -0.25rem;
+   margin-right: auto;
+   margin-top: 5rem;
+}
+
+.experience-card {
+   width: 15vw;
+   @media screen and (max-width: 768px) {
+      width: 50vw;
+   }
+   
+}

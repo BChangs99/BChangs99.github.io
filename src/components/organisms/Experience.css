@@ -1,0 +1,72 @@
+.experience {
+   /* Grid display columns of 3 with the center column being just 1 thin strip */
+   display: grid;
+   grid-template-columns: 1fr 0fr 1fr;
+   grid-template-rows: 1fr;
+   grid-template-areas: "left center right";
+   /* Center the grid */
+   justify-items: center;
+   align-items: center;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
+
+.mobile-experience {
+   display: flex;
+   flex-direction: column;
+   margin-left: 3rem;
+   margin-right: 3rem;
+}
+
+.mobile-experience h3, .mobile-experience h4, .mobile-experience h5 {
+   margin: 0;
+   margin-bottom: 0.5rem;
+}
+
+.mobile-experience-card {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.dark-mode .mobile-experience-card {
+   color: lightsteelblue
+}
+
+.experience-border {
+   width: 0.5rem;
+   height: 100%;
+   background-color: #9B6A6C;
+   border-radius: 2rem;
+}
+
+.dark-mode .experience-header {
+   color: #f5f5f5;
+}
+
+.experience-header {
+   text-align: center;
+   scroll-margin-top: 6rem;
+}
+
+.experience-grid-left {
+   grid-area: left;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+}
+
+.experience-grid-right {
+   grid-area: right;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+}

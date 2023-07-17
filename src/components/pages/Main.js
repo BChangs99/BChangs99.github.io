@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react"
 import Skills from '../organisms/Skills.js'
 import Projects from "../organisms/Projects"
 import { AboutMe } from "../organisms/AboutMe";
+import Experience from "../organisms/Experience";
 
 export default function Main() {
    const howdyContainerRef = useRef(null);
@@ -69,6 +70,7 @@ export default function Main() {
             <div className="main-intro-divider"></div>
             <Skills />
          </div>
+         <Experience />
          <Projects />
       </div>
    )
