@@ -1,0 +1,23 @@
+.dark-mode .mobile-experience-card h6 {
+   color:rgba(0, 255, 255, 0.75);
+}
+
+.mobile-experience-card {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 1.25rem;
+}
+
+.mobile-experience-card:hover {
+   background-color: rgba(0, 255, 255, 0.25);
+   border-radius: 0.5rem;
+   cursor: pointer;
+   transition: background-color 0.5s ease;
+   padding: 1rem;
+   cursor: pointer;
+}
+
+.dark-mode .mobile-experience-card {
+   color: lightsteelblue
+}

@@ -2,9 +2,10 @@ import React, { Fragment, useRef } from 'react'
 import PropTypes from 'prop-types'
 import Card from '@mui/material/Card';
 import "./ExperienceCard.css"
-import { CardHeader, CardContent, Collapse, CardActions, Chip} from '@mui/material';
+import { CardHeader, CardContent, Collapse, CardActions, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandMore from '../atoms/ExpandMore';
+
 function ExperienceCard(props) {
    const [expanded, setExpanded] = React.useState(false);
    const scrollToRef = useRef()
@@ -18,6 +19,8 @@ function ExperienceCard(props) {
       }
    }
 
+   // make a function that takes in the side and returns the correct class name?
+   // Make experiencecard atom
   return (
      <Fragment>
         { props.side === "right" ?
@@ -39,14 +42,10 @@ function ExperienceCard(props) {
                         <ExpandMoreIcon/>
                      </ExpandMore>
                         <Collapse in={expanded} timeout="auto" unmountOnExit>
-                           {props.children}
+                           <Typography paragraph align="left">{props.summary}</Typography>
                         </Collapse>
                   </CardContent>
                   <CardActions>
-                     <Chip label="React" />
-                     <Chip label="HTML" />
-                     <Chip label="CSS" />
-                     <Chip label="Redux" />
                   </CardActions>
                </Card>
             </Fragment>
@@ -65,9 +64,11 @@ function ExperienceCard(props) {
                            <ExpandMoreIcon/>
                         </ExpandMore>
                         <Collapse in={expanded} timeout="auto" unmountOnExit>
-                           {props.children}
+                           <Typography paragraph align="left">{props.summary}</Typography>
                         </Collapse>
                      </CardContent>
+                     <CardActions>
+                  </CardActions>
                   </Card>
                   <div className='experience-line-container left-line-container'>
                      <div className='experience-line-date left-line-date'>{props.date}</div>

@@ -11,6 +11,8 @@
    margin-bottom: 2rem;
    padding-left: 2rem;
    padding-right: 2rem;
+   border-bottom: 0.15rem solid #3C7A89;
+   padding-bottom: 2rem;
 }
 
 .mobile-experience {
@@ -18,6 +20,7 @@
    flex-direction: column;
    margin-left: 3rem;
    margin-right: 3rem;
+   border-bottom: 0.15rem solid #3C7A89;
 }
 
 .mobile-experience h3, .mobile-experience h4, .mobile-experience h5 {
@@ -25,20 +28,10 @@
    margin-bottom: 0.5rem;
 }
 
-.mobile-experience-card {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-}
-
-.dark-mode .mobile-experience-card {
-   color: lightsteelblue
-}
-
 .experience-border {
    width: 0.5rem;
    height: 100%;
-   background-color: #9B6A6C;
+   background-color: #3C7A89;
    border-radius: 2rem;
 }
 

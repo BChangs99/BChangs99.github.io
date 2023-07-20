@@ -1,15 +1,27 @@
 .dark-mode .experience-line-date {
-   color: #f5f5f5;
+   color: #d4d4d4;
 }
 
 .dark-mode .experience-card {
-   background: #f5f5f5 !important;
+   background: #0f1729 !important;
+   color: rgb(123,143,178);
+}
+
+.dark-mode .experience-card, .dark-mode .experience-card span, .dark-mode .experience-card button {
+   color: rgb(123,143,178);
+}
+
+.dark-mode .experience-card:hover {
+   /* Figure out how to do this -- or maybe need sass */
+   /* .experience-card span:hover {
+      color: rgb(1, 136, 246)
+   } */
 }
 
 .experience-line {
    border-radius: 2rem;
    height: 0.5rem;
-   background-color: #9B6A6C;
+   background-color: #3C7A89;
 }
 
 .experience-line-date {
@@ -66,8 +78,14 @@
 
 .experience-card {
    width: 15vw;
+   border-radius: 20px !important;
+   box-shadow: none !important;
    @media screen and (max-width: 768px) {
       width: 50vw;
-   }
-   
+   }  
+}
+
+.experience-card:hover {
+   box-shadow: #3C7A89 0px 0px 10px 0px !important;
+   cursor: pointer;
 }
