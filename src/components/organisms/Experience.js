@@ -8,7 +8,6 @@ function Experience() {
   // We use useRef cause we only get the window size once 
   // Ignoring the use case of someone's screen resizing during use
   const windowSize = useRef({width: window.innerWidth, height: window.innerHeight});
-  console.log(windowSize)
   const experiences = [
     {
       position: "left",

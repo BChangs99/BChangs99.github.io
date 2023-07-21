@@ -43,12 +43,7 @@ export default function Main() {
          observer.disconnect();
       }
    }, [howdyContainerRef, aboutRef, skillsRef, introSpielRef1, introSpielRef2, introSpielRef3, options])
-  
-   // **Todo
-   // 1. Add a link to the resume (Done)
-   // 2. Refactor projects, skills into its own component
-   // 3. Add icons/links for contact info (Done)
-   // 4. Decide if repo can stay private (for mantis)
+
    return (
       <div className="main">
             <div ref={howdyContainerRef} className="main-section-one hidden-main">

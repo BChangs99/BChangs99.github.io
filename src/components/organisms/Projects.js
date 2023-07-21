@@ -47,10 +47,6 @@ export default function Projects() {
       }
    }, [projectsRef, ventiRef, mantisRef, broadcastingPrototypeRef, connect2earthRef, videoGameReviewerRef, mte220CalculatorRef, options])
 
-
-   // ToDo
-   // Add experiences section --> imagining vertical line/timeline with each experience as a dot on the line with a description of the experience below it
-   // As you scroll down, the dots will appear and the line will extend to the dot and the description will appear below it (maybe with a fade in effect)
   return (
    <div className="main-projects">
       <h1 ref={projectsRef} className="hidden-projects">Projects</h1>
