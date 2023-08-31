@@ -1,57 +1,19 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import ventiPhysical from '../../assets/ventiphysical.webp'
 import webIcon from '../../assets/internet.webp'
 import mantis from '../../assets/Mantis.webp'
-import { useRef } from 'react'
 import "./Projects.css"
 import { CardMedia } from '@mui/material'
 import Typography from '@mui/material/Typography';
 import ProjectCard from '../molecules/ProjectCard'
 
 export default function Projects() {
-   const projectsRef = useRef(null);
-   const ventiRef = useRef(null);
-   const mantisRef = useRef(null);
-   const broadcastingPrototypeRef = useRef(null);
-   const connect2earthRef = useRef(null);
-   const videoGameReviewerRef = useRef(null);
-   const mte220CalculatorRef = useRef(null);
-
-   const options = {
-      root: null, // relative to document viewport
-      rootMargin: "0px", // margin around root. Values are similar to css property. Unitless values not allowed
-      threshold: 0 // visible amount of item shown in relation to root
-   }
-
-   const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-         if (entry.isIntersecting) {
-            entry.target.classList.add("show-projects");
-         } else {
-            entry.target.classList.remove("show-projects");
-         }
-      })
-   }, options);
-
-   useEffect(() => {
-      if (projectsRef.current) observer.observe(projectsRef.current)
-      if (ventiRef.current) observer.observe(ventiRef.current)
-      if (mantisRef.current) observer.observe(mantisRef.current)
-      if (broadcastingPrototypeRef.current) observer.observe(broadcastingPrototypeRef.current)
-      if (connect2earthRef.current) observer.observe(connect2earthRef.current)
-      if (videoGameReviewerRef.current) observer.observe(videoGameReviewerRef.current)
-      if (mte220CalculatorRef.current) observer.observe(mte220CalculatorRef.current)
-
-      return () => {
-         observer.disconnect();
-      }
-   }, [projectsRef, ventiRef, mantisRef, broadcastingPrototypeRef, connect2earthRef, videoGameReviewerRef, mte220CalculatorRef, options])
-
+   // ToDO: refactor this
   return (
    <div className="main-projects">
-      <h1 ref={projectsRef} className="hidden-projects">Projects</h1>
+      <h1 className="show-projects">Projects</h1>
          <div className='main-projects-container'>
-            <div ref={ventiRef} className="hidden-projects projects">
+            <div className="show-projects projects">
                <ProjectCard title="Venti" subHeading="An IoT Vent and Thermostat Controller">
                   <Typography paragraph>
                      Venti is a smart thermostat and vent controller designed to offer users a convenient way to control their home's heating and ventilation systems. 
@@ -73,7 +35,7 @@ export default function Projects() {
                   </Typography>
                </ProjectCard>
             </div>
-            <div ref={mantisRef} className="hidden-projects projects">
+            <div className="show-projects projects">
                <ProjectCard title="Mantis Bug Tracker" subHeading="Expedited QA Bug Tracking Extension">
                   <Typography paragraph>
                      During my Co-Op experience at BenQ in Taiwan, I spearheaded an exciting project aimed at enhancing the bug tracking capabilities of the quality assurance team. 
@@ -96,7 +58,7 @@ export default function Projects() {
                </ProjectCard>
                   {/* <a href="https://github.com/BChangs99/MantisExtension"><img src={webIcon} alt="Web Link" className="mantis-web-icon"/></a> */}
             </div>
-            <div ref={broadcastingPrototypeRef} className="hidden-projects projects">
+            <div className="show-projects projects">
                <ProjectCard title="Broadcasting Prototype" subHeading="A Web-Based Broadcasting Prototype">
                   <Typography paragraph>
                      During my second Co-Op experience at BenQ in Taiwan, I embarked on an exciting project focused on prototyping broadcasting capabilities for BenQ's televisions.
@@ -116,7 +78,7 @@ export default function Projects() {
                   </Typography>
                </ProjectCard>
             </div>
-            <div ref={connect2earthRef} className="hidden-projects projects">
+            <div className="show-projects projects">
                <ProjectCard title="Connect2Earth" subHeading="A Social Media Hub for Environmental Discussions">
                   <Typography paragraph>
                      In my very first Co-Op experience as a web developer at Pixelbot, I had the incredible opportunity to contribute to a groundbreaking project.
@@ -146,7 +108,7 @@ export default function Projects() {
                   </Typography>
                </ProjectCard>
             </div>
-            <div ref={videoGameReviewerRef} className="hidden-projects projects">
+            <div className="show-projects projects">
                <ProjectCard title="Video Game Reviewer" subHeading="A Full-Stack Web Application">
                   <Typography paragraph>
                      During my journey to acquire full-stack web development skills, I embarked on an enriching exercise and collaborative practice with my talented friend, Samuel Lin, whose contributions elevated the project to new heights.
@@ -175,7 +137,7 @@ export default function Projects() {
                   </Typography>
                </ProjectCard>
             </div>
-            <div ref={mte220CalculatorRef} className="hidden-projects projects">
+            <div className="show-projects projects">
                <ProjectCard title="MTE 220 Mark Calculator" subHeading="A Quick Script to Automate a Ridiculous Marking Scheme">
                   <a href="https://github.com/BChangs99/MTE220_Calculator"><img src={webIcon} alt="Web Link" className="mte220-web-icon"/></a>
                   <Typography paragraph>

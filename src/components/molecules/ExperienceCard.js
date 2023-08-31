@@ -85,8 +85,6 @@ function ExperienceCard(props) {
 ExperienceCard.propTypes = {
    // From left or right
    side: PropTypes.string.isRequired,
-   // Card content
-   children: PropTypes.node.isRequired,
    // Company name
    company: PropTypes.string.isRequired,
    // Job title

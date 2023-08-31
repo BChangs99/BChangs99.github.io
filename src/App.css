@@ -28,15 +28,6 @@
   position: relative;
 }
 
-.main-text-intro-left h1 {
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-image: linear-gradient(90deg, #2ca2b4, #5598de, #7f87ff, #f65aad, #ec3d43);
-  color: transparent;
-  animation: background-slide 6s infinite;
-  background-size: 200%;
-}
-
 @keyframes background-slide {
   from {
     background-position: 0% center;

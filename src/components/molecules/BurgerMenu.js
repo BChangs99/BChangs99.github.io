@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { NavLink } from 'react-router-dom';
 import "./BurgerMenu.css"
 import PropTypes from 'prop-types'
+import { HackerText } from '../atoms/HackerText';
 
 const BurgerMenu = props => {
   function burgerMenuCloseHandler() {
@@ -31,17 +32,17 @@ const BurgerMenu = props => {
               className='burger-menu-home'
               onClick={burgerMenuCloseHandler}
             >
-              BChangs
+              <HackerText originalText="BChangs"/>
             </NavLink>
-            <a href="https://www.linkedin.com/in/brianchangtron/" className="burger-menu-linkedin">Linkedin</a>
-            <a href="https://github.com/BChangs99" className="burger-menu-github">Github</a>
+            <a href="https://www.linkedin.com/in/brianchangtron/" className="burger-menu-linkedin"><HackerText originalText="LinkedIn"/></a>
+            <a href="https://github.com/BChangs99" className="burger-menu-github"><HackerText originalText="Github"/></a>
             <NavLink 
             to="/resume" 
             className='burger-menu-resume'
             onClick={handleResumeOnClick}
-          >
-            Resume
-          </NavLink>
+            >
+              <HackerText originalText="Resume"/>
+            </NavLink>
           </div>
         </div>
       </div>

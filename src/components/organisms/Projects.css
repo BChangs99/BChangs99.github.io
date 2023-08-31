@@ -50,26 +50,12 @@
    margin-right: auto;
    border: solid #3C7A89 3px;
  }
-
- .hidden-projects {
-   opacity: 0;
-   filter: blur(15px);
-   transform: translateZ(-100%);
-   transition: all ease-in-out 1.2s;
-  }
   
   .projects {
     padding-top: 2rem;
     padding-bottom: 2rem;
     border-bottom: solid 0.2rem #3C7A89;
   }
-
- .show-projects {
-   opacity: 1;
-   filter: blur(0);
-   transform: translateZ(0%);
- }
-
 
  /* For window sizes width less than 900px  */
 

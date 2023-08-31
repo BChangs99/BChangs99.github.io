@@ -6,9 +6,10 @@
    background-color: #3C7A89;
    height: 7vh;
    top: 0;
-   opacity: 0.98;
+   opacity: 0;
    /* b/c about me and skills are above for some reason */
    z-index: 1;
+   transition: opacity 0.35s ease-in-out;
  }
  
  .app-header a {

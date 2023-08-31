@@ -100,60 +100,40 @@
     width: 25%;
   }
 }
-.hidden-skills {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 0.9s;
-}
-
-.show-skills {
-  opacity: 1;
-  filter: blur(0px);
-  transform: translateX(0%);
-  transition: all 0.9s;
-}
 
 .javascript-animation {
   width: 80%;
-  animation: javascript-animation 2.5s;
-  transition-delay: 1s;
+  animation: javascript-animation 1.5s;
 }
 
 .react-animation {
   width: 80%;
-  animation: react-animation 2.5s;
-  transition-delay: 1.05s;
+  animation: react-animation 1.5s;
 }
 
 .html-animation {
   width: 65%;
-  animation: main-skills-html 2.5s;
-  transition-delay: 1.1s;
+  animation: main-skills-html 1.5s;
 }
 
 .css-animation {
   width: 55%;
-  animation: main-skills-css 2.5s;
-  transition-delay: 1.15s;
+  animation: main-skills-css 1.5s;
 }
 
 .node-animation {
   width: 50%;
-  animation: main-skills-node 2.5s;
-  transition-delay: 1.2s;
+  animation: main-skills-node 1.5s;
 }
 
 .git-animation {
   width: 45%;
-  animation: main-skills-2git 2.5s;
-  transition-delay: 1.25s;
+  animation: main-skills-2git 1.5s;
 }
 
 .c-animation {
   width: 25%;
-  animation: main-skills-c-plus-plus 2.5s;
-  transition-delay: 1.3s;
+  animation: main-skills-c-plus-plus 1.5s;
 }
 
 /*# sourceMappingURL=skills.scss.map */

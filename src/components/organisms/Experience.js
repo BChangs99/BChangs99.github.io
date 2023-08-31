@@ -58,7 +58,8 @@ function Experience() {
             <div className="experience-grid-left">
               {leftExperiences.map((experience, index) => {
                 return (
-                    <ExperienceCard  
+                    <ExperienceCard
+                    key={experience.date}  
                     scrollRef={experienceRef} 
                     side="left" 
                     jobTitle={experience.jobTitle} 
@@ -73,7 +74,8 @@ function Experience() {
             <div className="experience-grid-right">
               {rightExperiences.map((experience, index) => {
                 return (
-                    <ExperienceCard  
+                    <ExperienceCard
+                    key={experience.date}    
                     scrollRef={experienceRef} 
                     side="right" 
                     jobTitle={experience.jobTitle} 
