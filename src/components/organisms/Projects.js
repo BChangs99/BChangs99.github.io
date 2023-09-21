@@ -7,14 +7,21 @@ import { CardMedia } from '@mui/material'
 import Typography from '@mui/material/Typography';
 import ProjectCard from '../molecules/ProjectCard'
 
+import unsplash1 from '../../assets/project_images/unsplash1.jpg'
+import unsplash2 from '../../assets/project_images/unsplash2.jpg'
+import unsplash3 from '../../assets/project_images/unsplash3.jpg'
+import unsplash4 from '../../assets/project_images/unsplash4.jpg'
+import unsplash5 from '../../assets/project_images/unsplash5.jpg'
+import unsplash6 from '../../assets/project_images/unsplash6.jpg'
+
 export default function Projects() {
    // ToDO: refactor this
   return (
    <div className="main-projects">
-      <h1 className="show-projects">Projects</h1>
+      <h1>Projects</h1>
          <div className='main-projects-container'>
-            <div className="show-projects projects">
-               <ProjectCard title="Venti" subHeading="An IoT Vent and Thermostat Controller">
+            <div className="projects">
+               <ProjectCard title="Venti" subHeading="An IoT Vent and Thermostat Controller" backgroundIMG={unsplash1}>
                   <Typography paragraph>
                      Venti is a smart thermostat and vent controller designed to offer users a convenient way to control their home's heating and ventilation systems. 
                      The system automatically adjusts its vent fin angles to increase or decrease airflow in an effort to drive temperatures to the user's set goals.
@@ -35,8 +42,8 @@ export default function Projects() {
                   </Typography>
                </ProjectCard>
             </div>
-            <div className="show-projects projects">
-               <ProjectCard title="Mantis Bug Tracker" subHeading="Expedited QA Bug Tracking Extension">
+            <div className="projects">
+               <ProjectCard title="Mantis Bug Tracker" subHeading="Expedited QA Bug Tracking Extension" backgroundIMG={unsplash2}>
                   <Typography paragraph>
                      During my Co-Op experience at BenQ in Taiwan, I spearheaded an exciting project aimed at enhancing the bug tracking capabilities of the quality assurance team. 
                      From the very outset, starting with the initial design stage, planning, and design mockups, I was entrusted with complete authority and accountability for the entire project.
@@ -58,8 +65,8 @@ export default function Projects() {
                </ProjectCard>
                   {/* <a href="https://github.com/BChangs99/MantisExtension"><img src={webIcon} alt="Web Link" className="mantis-web-icon"/></a> */}
             </div>
-            <div className="show-projects projects">
-               <ProjectCard title="Broadcasting Prototype" subHeading="A Web-Based Broadcasting Prototype">
+            <div className="projects">
+               <ProjectCard title="Broadcasting Prototype" subHeading="A Web-Based Broadcasting Prototype" backgroundIMG={unsplash3}>
                   <Typography paragraph>
                      During my second Co-Op experience at BenQ in Taiwan, I embarked on an exciting project focused on prototyping broadcasting capabilities for BenQ's televisions.
                      Recognizing my proficiency in web development, I made the strategic decision to create the project as a website, rather than relying on the native operating system of the television.
@@ -78,8 +85,8 @@ export default function Projects() {
                   </Typography>
                </ProjectCard>
             </div>
-            <div className="show-projects projects">
-               <ProjectCard title="Connect2Earth" subHeading="A Social Media Hub for Environmental Discussions">
+            <div className="projects">
+               <ProjectCard title="Connect2Earth" subHeading="A Social Media Hub for Environmental Discussions" backgroundIMG={unsplash4}>
                   <Typography paragraph>
                      In my very first Co-Op experience as a web developer at Pixelbot, I had the incredible opportunity to contribute to a groundbreaking project.
                      This particular undertaking involved the implementation of a React-based social media hub, specifically designed for scraping and aggregating posts from popular platforms such as Twitter, Instagram, and Facebook.
@@ -108,8 +115,8 @@ export default function Projects() {
                   </Typography>
                </ProjectCard>
             </div>
-            <div className="show-projects projects">
-               <ProjectCard title="Video Game Reviewer" subHeading="A Full-Stack Web Application">
+            <div className="projects">
+               <ProjectCard title="Video Game Reviewer" subHeading="A Full-Stack Web Application" backgroundIMG={unsplash5}>
                   <Typography paragraph>
                      During my journey to acquire full-stack web development skills, I embarked on an enriching exercise and collaborative practice with my talented friend, Samuel Lin, whose contributions elevated the project to new heights.
                      Together, we delved into the intricacies of building a web application from scratch, acquiring valuable experience in every aspect of its development.
@@ -137,8 +144,8 @@ export default function Projects() {
                   </Typography>
                </ProjectCard>
             </div>
-            <div className="show-projects projects">
-               <ProjectCard title="MTE 220 Mark Calculator" subHeading="A Quick Script to Automate a Ridiculous Marking Scheme">
+            <div className="projects">
+               <ProjectCard title="MTE 220 Mark Calculator" subHeading="A Quick Script to Automate a Ridiculous Marking Scheme" backgroundIMG={unsplash6}>
                   <a href="https://github.com/BChangs99/MTE220_Calculator"><img src={webIcon} alt="Web Link" className="mte220-web-icon"/></a>
                   <Typography paragraph>
                      In my pursuit of academic excellence during MTE 220 (Sensors and Instrumentation) under the guidance of James Barby, I encountered a notable challenge posed by the intricate and time-consuming marking scheme.
