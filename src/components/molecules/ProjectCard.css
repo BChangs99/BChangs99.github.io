@@ -18,6 +18,7 @@
 }
 
 .main-projects-card-image {
+   height: 25vh;
 }
 
 .main-projects-card-header-container .MuiCardHeader-title {
