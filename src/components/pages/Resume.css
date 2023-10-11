@@ -1,41 +1,144 @@
-.resume-container {
-   width: 100%;
+.dark-mode .resume-container {
+   color: #f5f5f5;
+}
+
+.resume-background-gradient {
+   background: hsla(179, 83%, 64%, 1);
+   background: linear-gradient(90deg, hsla(179, 83%, 64%, 1) 0%, hsla(338, 75%, 64%, 1) 50%, hsla(14, 92%, 86%, 1) 100%);
+   opacity: 7.5%;
+   position: fixed;
    height: 100%;
-   display: block;
-   text-align: center;
-   padding-bottom: 3.125rem;
-   margin-top: 5vh;
+   width: 100vw;
+   filter: blur(5px);
+   z-index: -1;
+   /* margin-left: 35rem; */
+   /* margin-right: 35rem; */
 }
 
-.resume {
-   width:  100%;
-   box-shadow: 0px 0px 12px rgb(193, 168, 94);
+.resume-container {
+   display: grid;
+   grid-template-columns: 35% 50%;
+   grid-template-rows: 10% 90%;
+   column-gap: 5%;
+   /* height: 100vh; */
+   margin-left: 35rem;
+   margin-right: 35rem;
+   margin-top: 0rem;
+   padding: 3rem;
+   padding-top: 0rem;
+   opacity: 95%;
 }
 
-.main-resume {
-   text-align: center;
-}
-
-.main-resume-download {
-   padding: 0rem 0.625rem 0rem 0.625rem;
-   text-decoration: none;
-   transition: all 0.3s ease 0s;
-   border-radius: 20px;
-   color: black;
-}
- 
-.main-resume-download:hover {
-   background: #3C7A89;
-   color: white;
-}
-
-.main-resume-download-icon {
-   width: 1.563rem;
-}
-
-.main-resume-download-container {
+.resume-header {
+   grid-column: 1 / span 2;
    display: flex;
    justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   border-bottom: 1px solid black;
+   padding-left: 5rem;
+   padding-right: 5rem;
+}
+
+.resume-header-name {
+   font-size: 2.5rem;
+   font-weight: bold;
+}
+
+.resume-header-links {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+.resume-left, .resume-right {
+   display: flex;
+   /* justify-content: center; */
+   gap: 2rem;
+   flex-direction: column;
+}
+
+.resume-skills-container, .resume-experience {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   margin-top: 1rem;
+}
+
+.resume-experience-header, .resume-skills-header, .resume-education-header, .resume-projects-header {
+   font-size: 2.5rem;
+   font-weight: bold;
+}
+
+.resume-experience-header {
+   display: flex;
+}
+
+.resume-experience-details {
+   font-size: 1rem;
+}
+
+.resume-project-header {
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+.resume-projects-container {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+.resume-skills-holder {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.resume-experience-employer {
+   font-size: 1.5rem;
+   display: flex;
+   gap: 0.5rem;
    align-items: center;
 }
- 
+
+.resume-education-courses-container {
+   display: grid;
+   grid-template-columns: 48% 48%;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   column-gap: 4%;
+}
+
+.resume-education-courses-left, .resume-education-courses-right {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+.resume-education-school {
+   font-size: 1.1rem;
+   font-weight: bold;
+}
+
+.resume-education {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+}
+
+.resume-experience-details {
+   font-size: 0.95rem;
+}
+
+.resume-location-icon {
+   font-size: 1rem !important;
+}
+
+.resume-list-container {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   padding-inline-start: 1.25rem;
+   margin: 0;
+}

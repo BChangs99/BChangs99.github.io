@@ -67,6 +67,8 @@
 
 .burger-menu-text-holder {
    font-size: 2rem;
+   width: 100%;
+   margin-left: 50%;
 }
 
 .burger-menu-text-holder div, a {
