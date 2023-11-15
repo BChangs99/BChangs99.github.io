@@ -1,28 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.702e797f.css",
-    "main.js": "/static/js/main.0f11d4db.js",
+    "main.css": "/static/css/main.c8d7e30d.css",
+    "main.js": "/static/js/main.c4bc8ba7.js",
+    "static/js/703.7f71ffae.chunk.js": "/static/js/703.7f71ffae.chunk.js",
+    "static/js/617.3ed2d638.chunk.js": "/static/js/617.3ed2d638.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/BrianChang_Resume08292022.jpg": "/static/media/BrianChang_Resume08292022.6d2649c3eab9f5ac0ec1.jpg",
-    "static/media/unsplash5.jpg": "/static/media/unsplash5.9e119d2fa1b0b6eee39c.jpg",
-    "static/media/unsplash3.jpg": "/static/media/unsplash3.76bc57b129f7faec542c.jpg",
-    "static/media/unsplash6.jpg": "/static/media/unsplash6.471603ec08481f25ce4b.jpg",
-    "static/media/unsplash1.jpg": "/static/media/unsplash1.d345e607a1378af71b73.jpg",
-    "static/media/unsplash4.jpg": "/static/media/unsplash4.85cb51f4ee23ebfe7036.jpg",
-    "static/media/unsplash2.jpg": "/static/media/unsplash2.1e0d49f0ee71ad6628be.jpg",
     "static/media/headshot.webp": "/static/media/headshot.bb503761f1971f57b1e8.webp",
+    "static/media/bigfish.png": "/static/media/bigfish.b3687707ebf18698e685.png",
+    "static/media/BrianChang_ResumeCompressed.pdf": "/static/media/BrianChang_ResumeCompressed.394ac6b48d7c288260ef.pdf",
+    "static/media/unsplash4.jpg": "/static/media/unsplash4.a3916028b3100f13a00d.jpg",
+    "static/media/unsplash3.jpg": "/static/media/unsplash3.80a2a28a7e433baaf9b8.jpg",
+    "static/media/unsplash1.jpg": "/static/media/unsplash1.40e77f6d5f687f5a4c22.jpg",
+    "static/media/unsplash6.jpg": "/static/media/unsplash6.21715c15a28263180388.jpg",
+    "static/media/unsplash2.jpg": "/static/media/unsplash2.9ae1b70397208a268431.jpg",
+    "static/media/unsplash5.jpg": "/static/media/unsplash5.f2ffff73fd2d22e0c781.jpg",
     "static/media/Mantis.webp": "/static/media/Mantis.79776dbceaf58f4b293c.webp",
     "static/media/ventiphysical.webp": "/static/media/ventiphysical.72fe632ae55164144188.webp",
     "static/media/internet.webp": "/static/media/internet.0b734fb93ae5dfd83953.webp",
-    "static/media/close.webp": "/static/media/close.2a05b15ad30a718e78da.webp",
-    "static/media/download.webp": "/static/media/download.9c60fca75451b7a716e1.webp",
     "index.html": "/index.html",
-    "main.702e797f.css.map": "/static/css/main.702e797f.css.map",
-    "main.0f11d4db.js.map": "/static/js/main.0f11d4db.js.map",
+    "main.c8d7e30d.css.map": "/static/css/main.c8d7e30d.css.map",
+    "main.c4bc8ba7.js.map": "/static/js/main.c4bc8ba7.js.map",
+    "703.7f71ffae.chunk.js.map": "/static/js/703.7f71ffae.chunk.js.map",
+    "617.3ed2d638.chunk.js.map": "/static/js/617.3ed2d638.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.702e797f.css",
-    "static/js/main.0f11d4db.js"
+    "static/css/main.c8d7e30d.css",
+    "static/js/main.c4bc8ba7.js"
   ]
 }
