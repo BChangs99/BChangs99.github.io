@@ -3,7 +3,9 @@
    width: 25vw;
  }
  
- .venti-physical {
+ .project-card-inside-image {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
    width: 30vw;
    display: block;
    margin-left: auto;

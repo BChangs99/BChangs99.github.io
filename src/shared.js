@@ -1,4 +1,4 @@
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 export function handleResumeOnClick() {
    // Log the click event to GA

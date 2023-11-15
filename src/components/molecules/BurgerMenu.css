@@ -22,15 +22,6 @@
    align-items: center;
 }
 
-/* screen width less than 1200 px */
-
-@media screen and (max-width: 1200px) {
-   .burger-menu {
-      width: 100%;
-   }
-}
-
-
 .burger-menu-close {
    position: absolute;
    top: 1.5rem;
@@ -88,4 +79,18 @@
 
 .burger-menu-resume {
    color: inherit
+}
+
+/* screen width less than 1200 px */
+
+@media screen and (max-width: 1200px) {
+   .burger-menu {
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .burger-menu-text-holder {
+      margin: 0;
+   }
 }

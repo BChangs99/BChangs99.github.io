@@ -1,4 +1,5 @@
 import React from 'react'
+import bigFish from '../../assets/bigfish.png'
 import ventiPhysical from '../../assets/ventiphysical.webp'
 import webIcon from '../../assets/internet.webp'
 import mantis from '../../assets/Mantis.webp'
@@ -20,8 +21,29 @@ export default function Projects() {
    <div className="main-projects">
       <h1>Projects</h1>
          <div className='main-projects-container'>
-            <div className="projects">
-               <ProjectCard title="Venti" subHeading="An IoT Vent and Thermostat Controller" backgroundIMG={unsplash1}>
+            <div id="BigFish" className="projects">
+               <ProjectCard title="BigFish" subHeading="A B2B Dashboard" backgroundIMG={unsplash1}>
+                  <Typography paragraph>
+                     I solely developed a cutting-edge full-stack MERN (MongoDB, Express.js, React, Node.js) B2B application commissioned by multimillion-dollar corporations. 
+                     Swiftly mastering TypeScript to meet project demands, I prioritized a mobile-first approach, ensuring the responsiveness of numerous components across diverse devices.
+                  </Typography>
+                  <CardMedia component="img" image={bigFish} alt="BigFish Dashboard view" className="project-card-inside-image"/>
+                  <Typography paragraph>
+                     Empowering user interactions, I orchestrated features allowing users to create, filter, and sort posts within their subscribed boards. 
+                     This included sophisticated capabilities such as commenting and liking, fostering dynamic engagement. 
+                     Users could also sort posts by priority levels, enhancing the platform's flexibility and user-centric design.
+                  </Typography>
+                  <Typography paragraph>
+                     Employing Redux and adhering to Atomic Design principles optimized state management and development workflows. 
+                     React Router facilitated seamless page transitions, complementing robust RESTful APIs protected with JWT Tokens to ensure security. 
+                     Rigorous testing using Postman verified their reliability. 
+                     Translating Figma designs into pixel-perfect visuals showcased my attention to detail. 
+                     Continuous refinement, driven by rigorous error handling and user feedback, ensured an exceptional user experience.
+                  </Typography>
+               </ProjectCard>
+            </div>
+            <div id="Venti" className="projects">
+               <ProjectCard title="Venti" subHeading="An IoT Vent and Thermostat Controller" backgroundIMG={unsplash2}>
                   <Typography paragraph>
                      Venti is a smart thermostat and vent controller designed to offer users a convenient way to control their home's heating and ventilation systems. 
                      The system automatically adjusts its vent fin angles to increase or decrease airflow in an effort to drive temperatures to the user's set goals.
@@ -31,7 +53,7 @@ export default function Projects() {
                      this project came from the fact that space heating largely dominates the Canadian residential energy consumption and the lack of minute control HVAC systems
                      can offer in multi-person homes. As such, the system's competitive edge are its relatively inexpensiveness, airflow recycling, and device-agnostic platform.
                   </Typography>
-                  <CardMedia component="img" image={ventiPhysical} alt="Venti Physical" className="venti-physical"/>
+                  <CardMedia component="img" image={ventiPhysical} alt="Venti Physical" className="project-card-inside-image"/>
                   <Typography paragraph>
                      My responsibilities in this project were software-based, for example designing and developing the two-way LoRa communication protocol between the central
                      vent hub and the vents themselves. More specifically, this involved structuring the data packets that the devices would communicate to each other. This required
@@ -43,7 +65,7 @@ export default function Projects() {
                </ProjectCard>
             </div>
             <div className="projects">
-               <ProjectCard title="Mantis Bug Tracker" subHeading="Expedited QA Bug Tracking Extension" backgroundIMG={unsplash2}>
+               <ProjectCard title="Mantis Bug Tracker" subHeading="Expedited QA Bug Tracking Extension" backgroundIMG={unsplash3}>
                   <Typography paragraph>
                      During my Co-Op experience at BenQ in Taiwan, I spearheaded an exciting project aimed at enhancing the bug tracking capabilities of the quality assurance team. 
                      From the very outset, starting with the initial design stage, planning, and design mockups, I was entrusted with complete authority and accountability for the entire project.
@@ -66,7 +88,7 @@ export default function Projects() {
                   {/* <a href="https://github.com/BChangs99/MantisExtension"><img src={webIcon} alt="Web Link" className="mantis-web-icon"/></a> */}
             </div>
             <div className="projects">
-               <ProjectCard title="Broadcasting Prototype" subHeading="A Web-Based Broadcasting Prototype" backgroundIMG={unsplash3}>
+               <ProjectCard title="Broadcasting Prototype" subHeading="A Web-Based Broadcasting Prototype" backgroundIMG={unsplash4}>
                   <Typography paragraph>
                      During my second Co-Op experience at BenQ in Taiwan, I embarked on an exciting project focused on prototyping broadcasting capabilities for BenQ's televisions.
                      Recognizing my proficiency in web development, I made the strategic decision to create the project as a website, rather than relying on the native operating system of the television.
@@ -85,8 +107,8 @@ export default function Projects() {
                   </Typography>
                </ProjectCard>
             </div>
-            <div className="projects">
-               <ProjectCard title="Connect2Earth" subHeading="A Social Media Hub for Environmental Discussions" backgroundIMG={unsplash4}>
+            <div id="Connect2Earth" className="projects">
+               <ProjectCard title="Connect2Earth" subHeading="A Social Media Hub for Environmental Discussions" backgroundIMG={unsplash5}>
                   <Typography paragraph>
                      In my very first Co-Op experience as a web developer at Pixelbot, I had the incredible opportunity to contribute to a groundbreaking project.
                      This particular undertaking involved the implementation of a React-based social media hub, specifically designed for scraping and aggregating posts from popular platforms such as Twitter, Instagram, and Facebook.
@@ -112,35 +134,6 @@ export default function Projects() {
                   <Typography paragraph>
                      This first co-op experience not only allowed me to hone my web development skills but also provided me with invaluable insights into project collaboration, client interactions, and the importance of delivering a user-centric experience. 
                      It laid a solid foundation for my career as a web developer, igniting my passion for creating meaningful digital solutions.
-                  </Typography>
-               </ProjectCard>
-            </div>
-            <div className="projects">
-               <ProjectCard title="Video Game Reviewer" subHeading="A Full-Stack Web Application" backgroundIMG={unsplash5}>
-                  <Typography paragraph>
-                     During my journey to acquire full-stack web development skills, I embarked on an enriching exercise and collaborative practice with my talented friend, Samuel Lin, whose contributions elevated the project to new heights.
-                     Together, we delved into the intricacies of building a web application from scratch, acquiring valuable experience in every aspect of its development.
-                  </Typography>
-                  <Typography paragraph>
-                     In this endeavor, I assumed the role of back-end developer, taking charge of creating robust routes and implementing essential endpoint protection for validated users using JSON Web Tokens (JWT).
-                     Leveraging the power of Express, Node.js, and MongoDB, I crafted a secure and efficient back-end infrastructure capable of handling data storage and retrieval seamlessly.
-                     By employing industry best practices and adhering to the principles of clean code, I ensured the stability and scalability of our application's foundation.
-                  </Typography>
-                  <Typography paragraph>
-                     To guarantee the reliability and functionality of our APIs, I conducted comprehensive testing using Postman, meticulously validating their behavior and performance.
-                     This rigorous testing process served as a crucial step in delivering a high-quality product that met our users' expectations.
-                  </Typography>
-                  <Typography paragraph>
-                     In addition to my back-end responsibilities, I also actively participated in the front-end implementation, collaborating closely with Samuel to determine the optimal distribution of application state management using Redux. 
-                     Through effective communication and synchronized efforts, we ensured that the front-end seamlessly interacted with the back-end, providing a cohesive and delightful user experience.
-                  </Typography>
-                  <Typography paragraph>
-                     This collaborative exercise not only honed my technical skills in back-end development, but it also fortified my ability to work effectively within a team. By collaborating with Samuel, I gained a deeper understanding of the importance of clear communication, efficient code integration, and shared project ownership. 
-                     Together, we tackled challenges, explored innovative solutions, and delivered an application that surpassed our initial goals.
-                  </Typography>
-                  <Typography paragraph>
-                     This immersive experience further solidified my passion for full-stack web development, exposing me to the intricacies of both front-end and back-end technologies. 
-                     It instilled in me a sense of pride and accomplishment, paving the way for future endeavors where I can leverage my skills to create impactful web applications.
                   </Typography>
                </ProjectCard>
             </div>

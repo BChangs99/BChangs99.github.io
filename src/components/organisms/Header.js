@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
-import Burger from '../atoms/Burger';
-import BurgerMenu from '../molecules/BurgerMenu';
+// import Burger from '../atoms/Burger';
+// import BurgerMenu from '../molecules/BurgerMenu';
+// Prob removing burger menu
 import Switch from '@mui/material/Switch';
 import IconDash from '../molecules/IconDash';
 import { handleResumeOnClick } from '../../shared';
@@ -28,8 +29,8 @@ export default function Header(props) {
    onMouseLeave={() => setMouseEntered(false)}
    style={ !initialHeaderState ?  mouseEntered ? {opacity: 1} : {opacity: 0} : {opacity: 1}}
    >
-      <Burger />
-      <BurgerMenu handleResumeOnClick={handleResumeOnClick} />
+      {/* <Burger /> */}
+      {/* <BurgerMenu handleResumeOnClick={handleResumeOnClick} /> */}
       <IconDash/>
       <div className="theme-toggle">
          <Switch 

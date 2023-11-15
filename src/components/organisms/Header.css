@@ -1,6 +1,6 @@
  .app-header {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
    position: sticky;
    background-color: #3C7A89;

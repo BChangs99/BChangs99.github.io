@@ -2,33 +2,12 @@
   display: block;
   height: 100%;
   width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .main p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 2;
-}
-
-@media only screen and (min-width: 2000px) {
-  .headshot {
-    max-width: 25%;
-  }
-}
-
-@media only screen and (min-width: 560px) {
-  .headshot {
-    min-width: 340px;
-    max-width: 340px;
-  }
-}
-
-@media only screen and (max-width: 1350px) {
-  .main-intro-container {
-    flex-direction: column !important;
-  }
-
-  .main-intro-divider {
-    display: none;
-  }
 }
 
 .headshot {
@@ -167,3 +146,33 @@
 /*# sourceMappingURL=main.scss.map */
 
 /*# sourceMappingURL=main.css.map */
+
+@media only screen and (min-width: 2000px) {
+  .headshot {
+    max-width: 25%;
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  .headshot {
+    min-width: 340px;
+    max-width: 340px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .main-intro-container {
+    flex-direction: column !important;
+  }
+
+  .main-intro-divider {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

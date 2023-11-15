@@ -1,12 +1,12 @@
 import './App.css';
-import { useState } from 'react';
-import { Outlet } from 'react-router-dom';
-import usePageTracking from './usePageTracking';
+import { useState, useEffect } from 'react';
+import ReactGA from 'react-ga4';
+import { Outlet, useLocation } from 'react-router-dom';
 import Header from './components/organisms/Header';
 import Footer from './components/organisms/Footer';
 
 function App() {
-  usePageTracking();
+  const location = useLocation();
 
   // This defaults the dark mode to the user's system preference
   const darkModeInitialState = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -15,6 +15,10 @@ function App() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
+
+    useEffect(() => {
+      ReactGA.initialize("G-G8HHHDL2DV");
+  }, [location]);
 
   return (
       <div className={darkMode ? "App dark-mode" : "App"}>
