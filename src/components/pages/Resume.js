@@ -48,13 +48,31 @@ export default function Resume() {
                   <div className='resume-skills-header'>Skills</div>
                      <div className='resume-skills-holder'>
                         <div>Languages:</div>
-                        <div>React, HTML/CSS, JavaScript, Node.js, Python, C++</div>
+                        <div>React, HTML/CSS, JavaScript, Node.js, Python, C++, Assembly, PLC</div>
                         <div>Tools:</div>
-                        <div>React-Router, React-Redux, Jest, Postman, Sass, Git, MaterialUI, Ant Design, MongoDB </div>
+                        <div>React-Router, React-Redux, Puppeteer, Jest, Postman, Sass, Git, MaterialUI, Ant Design, MongoDB </div>
                      </div>
                </div>
                <div className="resume-projects-container">
                   <div className="resume-projects-header">Projects</div>
+                  <div className="resume-project-header">Job Data Web Scraper<LinkIcon /></div>
+                  <ul className='resume-list-container'>
+                     <li>
+                        Led a web automation project for a multi-million dollar real estate firm to gather job postings across Greater Vancouver.
+                     </li>
+                     <li>
+                        Limited by available APIs, developed a custom scraping scripts to extract and categorize postings by industry, salary, and remote options, enhancing decision-making.
+                     </li>
+                     <li>
+                        Optimized scraping algorithms by analyzing job board data retrieval methods, reducing runtime from nearly 40 minutes to 15 minutes by eliminating unnecessary page navigations.
+                     </li>
+                     <li>
+                        Implemented a modular code structure to facilitate easy expansion for future use cases, ensuring scalability for different locations or job criteria with minimal development effort.
+                     </li>
+                     <li>
+                        Consistently coordinated with project stakeholders, incorporating continuous improvements to refine project requirements and enhance overall effectiveness for organizational objectives.
+                     </li>
+                  </ul>
                   <div className="resume-project-header">B2B Data Dashboard/Media Hub <LinkIcon /></div>
                   <ul className='resume-list-container'>
                      <li>
@@ -95,18 +113,6 @@ export default function Resume() {
                      </li>
                      <li>
                         Designed and implemented user interfaces with traditional HTML and CSS for configuring temperature goals and monitoring live humidity, pressure, and air quality statistics.
-                     </li>
-                  </ul>
-                  <div className="resume-project-header">Connect2Earth <LinkIcon /></div>
-                  <ul className='resume-list-container'>
-                     <li>
-                        My inaugural web development project at Pixelbot - Collaborated with the World Wildlife Fund (WWF) to create an eco-friendly React-based social media hub, promoting global environmental awareness.
-                     </li>
-                     <li>
-                        Employed sophisticated IP detection mechanisms to dynamically customize links and site language, catering to the diverse country origins of users.
-                     </li>
-                     <li>
-                        Integrated social media functionality seamlessly into the website using APIs from top platforms like Facebook and Twitter, amplifying user engagement and the dissemination of WWF's critical environmental message.
                      </li>
                   </ul>
                </div>
