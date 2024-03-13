@@ -3,7 +3,7 @@
    justify-content: center;
    align-items: center;
    position: sticky;
-   background-color: #3C7A89;
+   background-color: transparent;
    height: 7vh;
    top: 0;
    opacity: 0;
@@ -22,14 +22,13 @@
  }
  
 .theme-toggle {
-   margin: 1rem;
    color: #f5f5f5;
 }
 
  /* Dark Mode CSS for Header */
 
  .dark-mode .app-header {
-   background-color: #3C7A89
+   background-color: transparent
  }
  
  .dark-mode .app-header a {

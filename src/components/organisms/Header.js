@@ -31,15 +31,16 @@ export default function Header(props) {
    >
       {/* <Burger /> */}
       {/* <BurgerMenu handleResumeOnClick={handleResumeOnClick} /> */}
-      <IconDash/>
-      <div className="theme-toggle">
-         <Switch 
-            onClick={props.toggleDarkMode}
-            aria-labelledby="Dark Mode Toggle"
-         >
-            {props.darkMode ? "Light Mode" : "Dark Mode"}
-         </Switch>
-      </div>
+      <IconDash>
+         <div className="theme-toggle">
+            <Switch 
+               onClick={props.toggleDarkMode}
+               aria-labelledby="Dark Mode Toggle"
+            >
+               {props.darkMode ? "Light Mode" : "Dark Mode"}
+            </Switch>
+         </div>
+      </IconDash>
    </div>
   )
 }

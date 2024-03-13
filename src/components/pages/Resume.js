@@ -64,7 +64,7 @@ export default function Resume() {
                         Limited by available APIs, developed a custom scraping scripts to extract and categorize postings by industry, salary, and remote options, enhancing decision-making.
                      </li>
                      <li>
-                        Optimized scraping algorithms by analyzing job board data retrieval methods, reducing runtime from nearly 40 minutes to 15 minutes by eliminating unnecessary page navigations.
+                        Optimized scraping algorithms by analyzing job board data retrieval methods, reducing runtime from 1 hour to 35 minutes by eliminating unnecessary page navigations.
                      </li>
                      <li>
                         Implemented a modular code structure to facilitate easy expansion for future use cases, ensuring scalability for different locations or job criteria with minimal development effort.

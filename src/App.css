@@ -5,7 +5,8 @@
 .dark-mode .about-me-container,
 .dark-mode .main-skills-container h1, 
 .dark-mode .footer,
-.dark-mode .main-skills {
+.dark-mode .main-skills,
+.dark-mode span {
   color: #f5f5f5;
 }
 /* Makes icons white */
