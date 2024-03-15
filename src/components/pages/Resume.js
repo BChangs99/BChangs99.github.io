@@ -183,6 +183,17 @@ export default function Resume() {
                      <div>MTE 325: Microprocessor Systems and Interfacing for Mechatronics Engineering</div>
                      <div>GENE 121: Digital Computation</div>
                   </div>
+                  <div className="resume-education-school">Meta Marketing Analytics Professional Certificate Course</div>
+                  <div>Courses:</div>
+                  <div className="resume-education-courses-container">
+                     <div>Introduction to Data Analytics</div>
+                     <div>Data Analysis with Spreadsheets and SQL</div>
+                     <div>Data Analytics Methods for Marketing</div>
+                     <div>Marketing Analytics Foundation</div>
+                     <div>Marketing Analytics with Meta</div>
+                     <div>Python Data Analytics</div>
+                     <div>Statistics for Marketing</div>
+                  </div>
                </div>
             </div>
          </div>
