@@ -1,7 +1,7 @@
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import './Resume.css'
 import ReactGA from 'react-ga4';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -9,7 +9,7 @@ import LaptopIcon from '@mui/icons-material/Laptop';
 import { Fragment } from 'react';
 import { usePDF } from 'react-to-pdf';
 import LinkIcon from '@mui/icons-material/Link';
-import BrianChangResume from '../../assets/BrianChang_ResumeCompressed.pdf';
+import BrianChangResume from '../../assets/BChangsResume.pdf';
 
 export default function Resume() {
    const { toPDF, targetRef } = usePDF({filename: 'BrianChangResume.pdf'});
