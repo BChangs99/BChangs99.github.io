@@ -51,9 +51,6 @@ export default function Main() {
                   <HackerText originalText={"Howdy!"} />
                </div>
             </div>
-            {/* <div className="main-img">
-               <div className='headshot'></div>
-            </div> */}
             <div className="main-text-intro">
                <h2>I'm Brian Chang</h2>
                <h2 ref={introSpielRef1} className="hidden">Web Developer</h2>

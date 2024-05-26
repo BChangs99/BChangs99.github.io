@@ -55,7 +55,25 @@ export default function Resume() {
                </div>
                <div className="resume-projects-container">
                   <div className="resume-projects-header">Projects</div>
-                  <div className="resume-project-header">Job Data Web Scraper<LinkIcon /></div>
+                  <div className="resume-project-header">Real Estate Report Extraction<LinkIcon /></div>
+                  <ul className='resume-list-container'>
+                     <li>
+                        Commissioned to automate the data extraction process from real estate reports, transforming a time-consuming manual operation into an instant task within 25 hours of development time with client feedback.
+                     </li>
+                     <li>
+                        Using Node.js, meticulously extracted data from PDFs using pixel positioning and other text data, leading to a reliable aggregation of real estate data.
+                     </li>
+                     <li>
+                        Following data extraction, refined and standardized the data format for user-friendly interpretation, and converted it into a universally accessible CSV format.
+                     </li>
+                     <li>
+                        Collaborated closely with contractors to innovate unique solutions for handling scenarios involving missing and outdated data.
+                     </li>
+                     <li>
+                        Designed with scalability and versatility in mind, allowing future avenues for data aggregation of multiple real estate reports across different markets.
+                     </li>
+                  </ul>
+                  <div className="resume-project-header">Jobs Data Web Scraper<LinkIcon /></div>
                   <ul className='resume-list-container'>
                      <li>
                         Led a web automation project for a multi-million dollar real estate firm to gather job postings across Greater Vancouver.
@@ -73,13 +91,10 @@ export default function Resume() {
                         Consistently coordinated with project stakeholders, incorporating continuous improvements to refine project requirements and enhance overall effectiveness for organizational objectives.
                      </li>
                   </ul>
-                  <div className="resume-project-header">B2B Data Dashboard/Media Hub <LinkIcon /></div>
+                  <div className="resume-project-header">Data Dashboard/Media Hub <LinkIcon /></div>
                   <ul className='resume-list-container'>
                      <li>
                         Developed a cutting-edge full-stack MERN (MongoDB, Express.js, React, Node.js) B2B application.
-                     </li>
-                     <li>
-                        Commissioned for multiple multimillion-dollar corporations, rapidly acquiring proficiency in Typescript to meet project demands.
                      </li>
                      <li>
                         Embraced a mobile-first perspective, making numerous components responsive to various devices.
@@ -98,21 +113,6 @@ export default function Resume() {
                      </li>
                      <li>
                         Ensured an exceptional user experience through rigorous error handling and usage feedback.
-                     </li>
-                  </ul>
-                  <div className="resume-project-header">Venti <LinkIcon /></div>
-                  <ul className='resume-list-container'>
-                     <li>
-                        Collaboratively designed an automated temperature management system using smart vents and vent fin controls to non-intrusively enhance home air flow and comfort.
-                     </li>
-                     <li>
-                        Used two-way LoRa communication (Arduino, C++) to exchange data packets between the centralized thermostat hub and individual smart vents.
-                     </li>
-                     <li>
-                        Programmed vent software to contain sleep functionality to assist in battery life longevity.
-                     </li>
-                     <li>
-                        Designed and implemented user interfaces with traditional HTML and CSS for configuring temperature goals and monitoring live humidity, pressure, and air quality statistics.
                      </li>
                   </ul>
                </div>

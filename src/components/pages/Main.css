@@ -9,19 +9,6 @@
   font-size: 1.25rem;
   line-height: 2;
 }
-
-.headshot {
-  background-image: url("../../assets/headshot.webp");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 200px;
-  border: outset black 2px;
-}
-
 .venti-logo {
   text-align: center;
   width: 50vw;
@@ -146,20 +133,6 @@
 /*# sourceMappingURL=main.scss.map */
 
 /*# sourceMappingURL=main.css.map */
-
-@media only screen and (min-width: 2000px) {
-  .headshot {
-    max-width: 25%;
-  }
-}
-
-@media only screen and (min-width: 560px) {
-  .headshot {
-    min-width: 340px;
-    max-width: 340px;
-  }
-}
-
 @media only screen and (max-width: 1350px) {
   .main-intro-container {
     flex-direction: column !important;
