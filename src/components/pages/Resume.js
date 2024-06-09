@@ -71,11 +71,46 @@ export default function Resume() {
           <div className="resume-skills-container">
             <div className="resume-skills-header">Skills</div>
             <div className="resume-skills-holder">
-              <div>Languages:</div>
-              <div>React, HTML/CSS, JavaScript, Node.js, Python, C++, Assembly, PLC</div>
-              <div>Tools:</div>
-              <div>
-                React-Router, React-Redux, Puppeteer, Jest, Postman, Sass, Git, MaterialUI, Ant Design, MongoDB{" "}
+              <div className="resume-skills-section">
+                <div className="resume-skills-section-title">Languages:</div>
+                <div className="resume-skills-section-skills-holder">
+                  <div className="resume-skills-section-skill">React</div>
+                  <div className="resume-skills-section-skill">HTML/CSS</div>
+                  <div className="resume-skills-section-skill">JavaScript</div>
+                  <div className="resume-skills-section-skill">TypeScript</div>
+                  <div className="resume-skills-section-skill">Node.js</div>
+                  <div className="resume-skills-section-skill">Python</div>
+                  <div className="resume-skills-section-skill">C++</div>
+                  <div className="resume-skills-section-skill">Assembly</div>
+                </div>
+              </div>
+              <div className="resume-skills-section">
+                <div className="resume-skills-section-title">Frontend Tech:</div>
+                <div className="resume-skills-section-skills-holder">
+                  <div className="resume-skills-section-skill">React-Router</div>
+                  <div className="resume-skills-section-skill">React-Redux</div>
+                  <div className="resume-skills-section-skill">MaterialUI</div>
+                  <div className="resume-skills-section-skill">Ant Design</div>
+                  <div className="resume-skills-section-skill">Tailwind</div>
+                  <div className="resume-skills-section-skill">Next.js</div>
+                </div>
+              </div>
+              <div className="resume-skills-section">
+                <div className="resume-skills-section-title">Dev Tools:</div>
+                <div className="resume-skills-section-skills-holder">
+                  <div className="resume-skills-section-skill">Git</div>
+                  <div className="resume-skills-section-skill">Puppeteer</div>
+                  <div className="resume-skills-section-skill">Jest</div>
+                  <div className="resume-skills-section-skill">Postman</div>
+                </div>
+              </div>
+              <div className="resume-skills-section">
+                <div className="resume-skills-section-title">Backend Tech:</div>
+                <div className="resume-skills-section-skills-holder">
+                  <div className="resume-skills-section-skill">Node.js</div>
+                  <div className="resume-skills-section-skill">Express.js</div>
+                  <div className="resume-skills-section-skill">MongoDB</div>
+                </div>
               </div>
             </div>
           </div>
@@ -87,25 +122,24 @@ export default function Resume() {
             </div>
             <ul className="resume-list-container">
               <li>
-                Commissioned to automate the data extraction process from real estate reports, transforming a
-                time-consuming manual operation into an instant task within 25 hours of development time with client
-                feedback.
+                Commissioned to automate the data extraction process from real estate reports, converting a long manual
+                operation into an instant task within 25 hours of development time
               </li>
               <li>
                 Using Node.js, meticulously extracted data from PDFs using pixel positioning and other text data,
-                leading to a reliable aggregation of real estate data.
+                leading to a reliable aggregation of real estate data
               </li>
               <li>
                 Following data extraction, refined and standardized the data format for user-friendly interpretation,
-                and converted it into a universally accessible CSV format.
+                converting into a universally accessible CSV format
               </li>
               <li>
                 Collaborated closely with contractors to innovate unique solutions for handling scenarios involving
-                missing and outdated data.
+                missing and outdated data
               </li>
               <li>
                 Designed with scalability and versatility in mind, allowing future avenues for data aggregation of
-                multiple real estate reports across different markets.
+                multiple real estate reports across different markets
               </li>
             </ul>
             <div className="resume-project-header">
@@ -118,20 +152,20 @@ export default function Resume() {
                 Greater Vancouver.
               </li>
               <li>
-                Limited by available APIs, developed a custom scraping scripts to extract and categorize postings by
-                industry, salary, and remote options, enhancing decision-making.
+                Limited by available APIs, developed custom scraping scripts to extract and categorize postings by
+                industry, salary, and remote options
               </li>
               <li>
                 Optimized scraping algorithms by analyzing job board data retrieval methods, reducing runtime from 1
-                hour to 35 minutes by eliminating unnecessary page navigations.
+                hour to 35 minutes by eliminating unnecessary page navigations
               </li>
               <li>
                 Implemented a modular code structure to facilitate easy expansion for future use cases, ensuring
-                scalability for different locations or job criteria with minimal development effort.
+                scalability for different locations or job criteria with minimal development effort
               </li>
               <li>
-                Consistently coordinated with project stakeholders, incorporating continuous improvements to refine
-                project requirements and enhance overall effectiveness for organizational objectives.
+                Coordinated with project stakeholders, incorporating continuous improvements to refine project
+                requirements and enhance overall effectiveness for organizational objectives
               </li>
             </ul>
             <div className="resume-project-header">
@@ -141,12 +175,12 @@ export default function Resume() {
               <li>Developed a cutting-edge full-stack MERN (MongoDB, Express.js, React, Node.js) B2B application.</li>
               <li>Embraced a mobile-first perspective, making numerous components responsive to various devices.</li>
               <li>
-                Utilized Redux and followed Atomic Design for efficient state management and component organization.
+                Utilized Redux and followed Atomic Design for efficient state management and component organization
               </li>
-              <li>Employed React Router for seamless page management and private route handling.</li>
+              <li>Employed React Router for seamless page management and private route handling</li>
               <li>
                 Designed RESTful APIs, all protected with JWT Tokens for utmost security, tested thoroughly using
-                Postman.
+                Postman
               </li>
               <li>Translated client Figma designs into pixel-perfect, visually stunning front-end visuals.</li>
               <li>Ensured an exceptional user experience through rigorous error handling and usage feedback.</li>
@@ -156,6 +190,34 @@ export default function Resume() {
         <div className="resume-right">
           <div className="resume-experience">
             <div className="resume-experience-header">Experience</div>
+            <div className="resume-experience-employer">
+              Freelance Developer
+              <div className="resume-experience-details">
+                [December 2023 - Present | <LocationOnIcon className="resume-location-icon" /> Remote]
+              </div>
+            </div>
+            <ul className="resume-list-container">
+              <li>
+                Specialized in freelance development projects focusing on data extraction, compilation, visualization,
+                and web scraping solutions.
+              </li>
+              <li>
+                Collaborated with clients to understand project requirements and deliver tailored solutions within
+                agreed timelines, leveraging effective communication and project management skills.
+              </li>
+              <li>
+                Successfully automated the data extraction process from real estate reports, reducing manual workload
+                and improving efficiency.
+              </li>
+              <li>
+                Implemented innovative solutions for handling missing and outdated data, demonstrating problem-solving
+                skills and adaptability.
+              </li>
+              <li>
+                Worked closely with project stakeholders to refine requirements and ensure alignment with organizational
+                objectives.
+              </li>
+            </ul>
             <div className="resume-experience-employer">
               Dozr
               <div className="resume-experience-details">
@@ -171,7 +233,7 @@ export default function Resume() {
               <li>Spearheaded an overhaul of the backend and email infrastructure, enhancing user communication.</li>
               <li>
                 Took ownership of re-implementing user purchase tracking by creating an API-connected customer order
-                page.
+                page, accomplishing a production ready Front-End within 2 weeks.
               </li>
               <li>
                 Implemented user analytics through tools like Google Analytics and Bing Ad Conversion, providing
@@ -224,6 +286,15 @@ export default function Resume() {
                 documentation.
               </li>
               <li>Enhanced code coverage from 80% to 90% of the entire code base by writing unit tests using Jest.</li>
+              <li>
+                Implemented comprehensive accessibility enhancements across 20 web pages to ensure WCAG compliance and
+                optimal user navigation.
+              </li>
+              <li>
+                Conducted meticulous testing with NVDA and JAWS screen readers, tracked and managed live issues in an
+                Excel sheet for team resolution, and efficiently completed the project, including contractor feedback,
+                within 3 weeks.
+              </li>
               <li>
                 Routinely fixed critical bugs, including forking third-party open source dependencies and
                 editing/contributing to their code.
