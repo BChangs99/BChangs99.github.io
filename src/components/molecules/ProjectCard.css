@@ -1,26 +1,28 @@
 .dark-mode .main-projects-card {
-   background: #0f1729 !important;
+  background: #0f1729 !important;
 }
 
-.dark-mode .main-projects-card, .dark-mode .main-projects-card span, .dark-mode .main-projects-card button {
-   color: rgb(123,143,178);
+.dark-mode .main-projects-card,
+.dark-mode .main-projects-card span,
+.dark-mode .main-projects-card button {
+  color: rgb(123, 143, 178);
 }
 
 .main-projects-card {
-   border-radius: 1rem !important;
-   box-shadow: none !important;
-   border: #0f1729;
+  border-radius: 0.5rem !important;
+  /* box-shadow: #3c7a89 0px 0px 10px 0px !important; */
+  border: #0f1729;
 }
 
 .main-projects-card:hover {
-   box-shadow: #3C7A89 0px 0px 10px 0px !important;
-   cursor: pointer;
+  box-shadow: #3c7a89 0px 0px 10px 0px !important;
+  cursor: pointer;
 }
 
 .main-projects-card-image {
-   height: 25vh;
+  height: 25vh;
 }
 
 .main-projects-card-header-container .MuiCardHeader-title {
-   font-size: 2rem;
+  font-size: 2rem;
 }
