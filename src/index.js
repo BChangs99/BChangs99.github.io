@@ -1,25 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import Resume from './components/pages/Resume';
-import Projects from './components/pages/ProjectsDocumentation';
-import Main from './components/pages/Main';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import Resume from "./components/pages/Resume";
+import Projects from "./components/pages/ProjectsDocumentation";
+import Main from "./components/pages/Main";
+import reportWebVitals from "./reportWebVitals";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Main />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/projects" element={<Projects />}/>
+          <Route path="/projects" element={<Projects />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 

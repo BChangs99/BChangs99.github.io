@@ -7,29 +7,31 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import LaptopIcon from "@mui/icons-material/Laptop";
 import { Fragment } from "react";
-import { usePDF } from "react-to-pdf";
 import LinkIcon from "@mui/icons-material/Link";
 import BrianChangResume from "../../assets/BChangsResume.pdf";
 
 export default function Resume() {
-  const { toPDF, targetRef } = usePDF({ filename: "BrianChangResume.pdf" });
-
   const handleDownloadOnClick = () => {
     // Log the click event to GA
     ReactGA.event({
-      category: "Resume",
-      action: "Clicked",
-      label: "Download",
+      category: "Download",
+      action: "Click",
+      label: "Resume",
     });
+  };
 
-    // Download the resume
-    // toPDF()
+  const logClick = (link) => {
+    ReactGA.event({
+      category: "Resume Link",
+      action: "click",
+      Label: `${link}`,
+    });
   };
 
   // ToDo
   // When screen size is less than what we want it to be -- we'll change the download to give a saved file instead of downloading the component
   // TBA when achievable -- issues right now with the toPDF library to consistently give it appropriately -- just giving predone file for now
-  // Main issues: Links not working and sizing not working right
+  // Main issues: Links not working and sizing not working right for the pdf
   return (
     <Fragment>
       <a
@@ -40,26 +42,26 @@ export default function Resume() {
       >
         Click here to download the resume below!
       </a>
-      <div ref={targetRef} className="resume-container">
+      <div className="resume-container">
         <div className="resume-header">
           <div className="resume-header-name">Brian Chang</div>
           <div className="resume-header-links">
-            <a href="https://github.com/BChangs99" target="_blank">
+            <a href="https://github.com/BChangs99" target="_blank" onClick={() => logClick("Github")}>
               {" "}
               <GitHubIcon />
               github.com/bchangs99
             </a>
-            <a href="https://www.linkedin.com/in/brianchangtron/" target="_blank">
+            <a href="https://www.linkedin.com/in/brianchangtron/" target="_blank" onClick={() => logClick("LinkedIn")}>
               {" "}
               <LinkedInIcon />
               linkedin.com/in/brianchangtron
             </a>
-            <a>
+            <a onClick={() => logClick("Email")}>
               {" "}
               <EmailIcon />
               bchangs778@gmail.com
             </a>
-            <NavLink to="/">
+            <NavLink to="/" onClick={() => logClick("Return Home")}>
               <LaptopIcon />
               bchangs99.github.io
             </NavLink>

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import Switch from "@mui/material/Switch";
 import IconDash from "../molecules/IconDash";
-import { handleResumeOnClick } from "../../shared";
 import { isMobile } from "react-device-detect";
 import PropTypes from "prop-types";
+import ReactGA from "react-ga4";
 import "./Header.css";
 
 export default function Header(props) {
@@ -17,6 +17,16 @@ export default function Header(props) {
     }, 1000);
   }, []);
 
+  const toggleSwitch = () => {
+    props.toggleDarkMode();
+
+    ReactGA.event({
+      category: "Toggle",
+      action: "Click",
+      Label: `Toggle Appearance to ${props.darkMode ? "Light" : "Dark"}`,
+    });
+  };
+
   return (
     <div
       className="app-header"
@@ -24,11 +34,9 @@ export default function Header(props) {
       onMouseLeave={() => setMouseEntered(false)}
       style={!initialHeaderState ? (mouseEntered ? { opacity: 1 } : { opacity: 0 }) : { opacity: 1 }}
     >
-      {/* <Burger /> */}
-      {/* <BurgerMenu handleResumeOnClick={handleResumeOnClick} /> */}
       <IconDash>
         <div className="theme-toggle">
-          <Switch onClick={props.toggleDarkMode} aria-labelledby="Dark Mode Toggle">
+          <Switch onClick={toggleSwitch} aria-labelledby="Dark Mode Toggle">
             {props.darkMode ? "Light Mode" : "Dark Mode"}
           </Switch>
         </div>

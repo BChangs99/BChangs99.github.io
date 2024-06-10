@@ -1,25 +1,25 @@
 .hidden-about-me {
-   /* opacity: 0;
-   filter: blur(15px);
-   transform: translateZ(-100%);
-   transition: all ease-in-out 0.5s; */
- }
- 
- .show-about-me {
-   /* opacity: 1;
-   filter: blur(0);
-   transform: translateZ(0%); */
- }
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateZ(-100%);
+  transition: all ease-in-out 0.5s;
+}
 
- .about-me-container {
-   border-bottom: solid 2px #3C7A89;
-   padding-bottom: 2rem;
-   width: 50%;
-   border-top: solid 2px #3C7A89;
- }
+.show-about-me {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateZ(0%);
+}
 
- @media only screen and (max-width: 1350px) {
+.about-me-container {
+  border-bottom: solid 2px #3c7a89;
+  padding-bottom: 2rem;
+  width: 50%;
+  border-top: solid 2px #3c7a89;
+}
+
+@media only screen and (max-width: 1350px) {
   .about-me-container {
     width: 100%;
   }
- }
+}
