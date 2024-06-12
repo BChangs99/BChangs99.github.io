@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactGA from "react-ga4";
 import "./skills.css";
 
 export default function Skills() {
@@ -28,6 +29,12 @@ export default function Skills() {
       ...prevBgColor,
       [selectedFilter]: !isCurrentlyActive ? "#f4a548" : "#3c7a89",
     }));
+
+    ReactGA.event({
+      category: "Skills",
+      action: `Click`,
+      label: selectedFilter,
+    });
   };
 
   const skills = {
