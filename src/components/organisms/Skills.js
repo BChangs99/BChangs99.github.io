@@ -41,7 +41,7 @@ export default function Skills() {
     languages: ["React (JSX)", "JavaScript", "HTML/CSS", "Node.js", "C++", "Python", "Assembly"],
     frontendTech: ["React-Router", "React-Redux", "MaterialUI", "Ant Design", "Tailwind", "Next.js"],
     devTools: ["Git", "GitHub", "VSCode", "Postman", "Jest"],
-    backendTech: ["Express", "MongoDB", "Mongoose", "RESTful APIs"],
+    backendTech: ["Express", "MongoDB", "Mongoose"],
   };
 
   return (

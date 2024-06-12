@@ -28,10 +28,6 @@ export default function Resume() {
     });
   };
 
-  // ToDo
-  // When screen size is less than what we want it to be -- we'll change the download to give a saved file instead of downloading the component
-  // TBA when achievable -- issues right now with the toPDF library to consistently give it appropriately -- just giving predone file for now
-  // Main issues: Links not working and sizing not working right for the pdf
   return (
     <Fragment>
       <a
@@ -122,11 +118,11 @@ export default function Resume() {
             </div>
             <ul className="resume-list-container">
               <li>
-                Commissioned to automate the data extraction process from real estate reports, converting a long manual
-                operation into an instant task within 25 hours of development time
+                Commissioned to automate the data extraction process from real estate reports, converting hours long
+                manual operations into an instant task within 25 hours of development time
               </li>
               <li>
-                Using Node.js, meticulously extracted data from PDFs using pixel positioning and other text data,
+                Using Node.js, meticulously extracted data from PDFs using pixel positioning and referenced text data,
                 leading to a reliable aggregation of real estate data
               </li>
               <li>
@@ -156,8 +152,8 @@ export default function Resume() {
                 industry, salary, and remote options
               </li>
               <li>
-                Optimized scraping algorithms by analyzing job board data retrieval methods, reducing runtime from 1
-                hour to 35 minutes by eliminating unnecessary page navigations
+                Optimized scraping algorithms by analyzing job board data retrieval methods, reducing runtime by 50%
+                from 1.5 hours to 45 minutes by eliminating unnecessary page navigations
               </li>
               <li>
                 Implemented a modular code structure to facilitate easy expansion for future use cases, ensuring
@@ -172,15 +168,14 @@ export default function Resume() {
               Data Dashboard/Media Hub <LinkIcon />
             </div>
             <ul className="resume-list-container">
-              <li>Developed a cutting-edge full-stack MERN (MongoDB, Express.js, React, Node.js) B2B application.</li>
-              <li>Embraced a mobile-first perspective, making numerous components responsive to various devices.</li>
+              <li>Solely developed a full-stack MERN (MongoDB, Express.js, React, Node.js) B2B application.</li>
+              <li>Embraced a mobile-first perspective, ensuring visual responsiveness to all devices.</li>
               <li>
-                Utilized Redux and followed Atomic Design for efficient state management and component organization
+                Utilized Redux and followed Atomic Design for efficient state management and component/file organization
               </li>
               <li>Employed React Router for seamless page management and private route handling</li>
               <li>
-                Designed RESTful APIs, all protected with JWT Tokens for utmost security, tested thoroughly using
-                Postman
+                Designed RESTful APIs protected with JWT Tokens for utmost security, tested thoroughly using Postman
               </li>
               <li>Translated client Figma designs into pixel-perfect, visually stunning front-end visuals.</li>
               <li>Ensured an exceptional user experience through rigorous error handling and usage feedback.</li>
@@ -193,7 +188,7 @@ export default function Resume() {
             <div className="resume-experience-employer">
               Freelance Developer
               <div className="resume-experience-details">
-                [December 2023 - Present | <LocationOnIcon className="resume-location-icon" /> Remote]
+                [ December 2023 - Present | <LocationOnIcon className="resume-location-icon" /> Remote ]
               </div>
             </div>
             <ul className="resume-list-container">
@@ -206,8 +201,8 @@ export default function Resume() {
                 agreed timelines, leveraging effective communication and project management skills.
               </li>
               <li>
-                Successfully automated the data extraction process from real estate reports, reducing manual workload
-                and improving efficiency.
+                Successfully automated the data extraction process from real estate reports and the manual recording of
+                job postings data, effectively reducing manual workload and improving efficiency.
               </li>
               <li>
                 Implemented innovative solutions for handling missing and outdated data, demonstrating problem-solving
@@ -221,22 +216,22 @@ export default function Resume() {
             <div className="resume-experience-employer">
               Dozr
               <div className="resume-experience-details">
-                [Developer | May - September 2021 | {<LocationOnIcon className="resume-location-icon" />} Kitchener,
-                Canada]
+                [ Developer | May - September 2021 | {<LocationOnIcon className="resume-location-icon" />} Kitchener,
+                Canada ]
               </div>
             </div>
             <ul className="resume-list-container">
               <li>
-                Maintained a high-traffic React-Redux site with consistent bug fixes and feature development, leading to
-                fewer reported issues and increased user satisfaction.
-              </li>
-              <li>Spearheaded an overhaul of the backend and email infrastructure, enhancing user communication.</li>
-              <li>
-                Took ownership of re-implementing user purchase tracking by creating an API-connected customer order
-                page, accomplishing a production ready Front-End within 2 weeks.
+                Solely accomplished overhaul of the Node.js backend and EJS email infrastructure, connecting central
+                backend and email generation microservices. Resulting in consolidation of follow-up emails for purchases
+                across all Front-end platforms, accelerated completion to under 1 month for shareholder presentation.{" "}
               </li>
               <li>
-                Implemented user analytics through tools like Google Analytics and Bing Ad Conversion, providing
+                Took ownership of re-implementing user purchase tracking by creating backend connected order summary
+                pages, accomplishing a production ready Front-End within 2 weeks.
+              </li>
+              <li>
+                Implemented user analytics through tools such as Google Analytics and Bing Ad Conversion, providing
                 granular insights into user interactions and guiding improvements in customer engagement and website
                 functionality.
               </li>
@@ -244,48 +239,43 @@ export default function Resume() {
             <div className="resume-experience-employer">
               BenQ{" "}
               <div className="resume-experience-details">
-                [Developer | May - August 2019 & January - April 2020 |{" "}
-                {<LocationOnIcon className="resume-location-icon" />} Taipei, Taiwan]
+                [ Developer | May - August 2019 & January - April 2020 |{" "}
+                {<LocationOnIcon className="resume-location-icon" />} Taipei, Taiwan ]
               </div>
             </div>
             <ul className="resume-list-container">
               <li>
-                Increased Quality Assurance department velocity by developing a Chrome extension to streamline error
-                reports from Mantis bug tracking, resulting in faster issue resolution.
-              </li>
-              <li>
-                Streamlined user feedback handling for the marketing team by enhancing Mention, a social media marketing
-                tool, to retrieve, analyze, and categorize user feedback on BenQ products, improving product insights.
-              </li>
-              <li>
-                Improved marketing campaign analysis by automating user data transfer to integrate with Salesforce data.
+                Increased Quality Assurance velocity by developing a Chrome extension to optimize error reporting from
+                Mantis bug tracking. Included features such as screenshot integration and automated error
+                categorization, the solution achieved a 10% reduction in daily time spent per employee, equivalent to
+                saving 48 minutes per day.
               </li>
               <li>
                 Prototyped stream broadcasting systems using experimental technologies (WebRTC, Socket.io, etc.) to test
-                the feasibility of content broadcasting products for its current line of televisions.
-              </li>
-              <li>
-                Implemented China-compliant web analytics tools, enabling successful user tracking of consumers located
-                in China.
+                the feasibility of content broadcasting products for its current line of televisions. Completed the
+                proof of concept within 1 month for presentation to multiple Product Team Leads
               </li>
             </ul>
             <div className="resume-experience-employer">
               Newtopia{" "}
               <div className="resume-experience-details">
-                [Developer | September - December 2018 | {<LocationOnIcon className="resume-location-icon" />} Toronto,
-                Canada]
+                [ Developer | September - December 2018 | {<LocationOnIcon className="resume-location-icon" />} Toronto,
+                Canada ]
               </div>
             </div>
             <ul className="resume-list-container">
               <li>
                 Achieved improved error handling and user engagement by designing, creating, and implementing a
-                Redux-based log.
+                Redux-based log for developer observation.
               </li>
               <li>
                 Increased efficiency and compatibility of the mobile app's endpoint by refactoring it and adding JSDoc
-                documentation.
+                documentation to all code written
               </li>
-              <li>Enhanced code coverage from 80% to 90% of the entire code base by writing unit tests using Jest.</li>
+              <li>
+                Enhanced code coverage from 80% to 90% of the entire code base by writing nearly 100 unit tests using
+                Jest.
+              </li>
               <li>
                 Implemented comprehensive accessibility enhancements across 20 web pages to ensure WCAG compliance and
                 optimal user navigation.
