@@ -202,8 +202,21 @@ let experiencesData = [
 function Experience() {
   const [filter, setFilter] = useState("all");
 
+  const [bgColor, setBgColor] = useState({
+    all: "#f4a548",
+    work: "transparent",
+    school: "transparent",
+  });
+
   const handleFilterChange = (filter) => {
     setFilter(filter);
+
+    setBgColor(() => ({
+      all: "transparent",
+      work: "transparent",
+      school: "transparent",
+      [filter]: "#f4a548",
+    }));
 
     ReactGA.event({
       category: "Filter",
@@ -218,9 +231,15 @@ function Experience() {
         <h1>Experience</h1>
       </div>
       <div className="experience-filter-toggle">
-        <div onClick={() => handleFilterChange("all")}>All</div>
-        <div onClick={() => handleFilterChange("work")}>Work</div>
-        <div onClick={() => handleFilterChange("school")}>School</div>
+        <div style={{ backgroundColor: bgColor.all }} onClick={() => handleFilterChange("all")}>
+          All
+        </div>
+        <div style={{ backgroundColor: bgColor.work }} onClick={() => handleFilterChange("work")}>
+          Work
+        </div>
+        <div style={{ backgroundColor: bgColor.school }} onClick={() => handleFilterChange("school")}>
+          School
+        </div>
       </div>
       <VerticalTimeline animate={true}>
         {experiencesData.map((experience, index) => {
