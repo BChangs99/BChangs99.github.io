@@ -201,7 +201,6 @@ let experiencesData = [
 
 function Experience() {
   const [filter, setFilter] = useState("all");
-
   const [bgColor, setBgColor] = useState({
     all: "#f4a548",
     work: "transparent",
@@ -210,7 +209,6 @@ function Experience() {
 
   const handleFilterChange = (filter) => {
     setFilter(filter);
-
     setBgColor(() => ({
       all: "transparent",
       work: "transparent",
