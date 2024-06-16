@@ -68,27 +68,34 @@ export default function Resume() {
             <div className="resume-skills-header">Skills</div>
             <div className="resume-skills-holder">
               <div className="resume-skills-section">
-                <div className="resume-skills-section-title">Languages:</div>
+                <div className="resume-skills-section-title">Frontend:</div>
                 <div className="resume-skills-section-skills-holder">
                   <div className="resume-skills-section-skill">React</div>
-                  <div className="resume-skills-section-skill">HTML/CSS</div>
-                  <div className="resume-skills-section-skill">JavaScript</div>
-                  <div className="resume-skills-section-skill">TypeScript</div>
-                  <div className="resume-skills-section-skill">Node.js</div>
-                  <div className="resume-skills-section-skill">Python</div>
-                  <div className="resume-skills-section-skill">C++</div>
-                  <div className="resume-skills-section-skill">Assembly</div>
-                </div>
-              </div>
-              <div className="resume-skills-section">
-                <div className="resume-skills-section-title">Frontend Tech:</div>
-                <div className="resume-skills-section-skills-holder">
                   <div className="resume-skills-section-skill">React-Router</div>
                   <div className="resume-skills-section-skill">React-Redux</div>
+                  <div className="resume-skills-section-skill">Next.js</div>
+                  <div className="resume-skills-section-skill">TypeScript</div>
                   <div className="resume-skills-section-skill">MaterialUI</div>
                   <div className="resume-skills-section-skill">Ant Design</div>
                   <div className="resume-skills-section-skill">Tailwind</div>
-                  <div className="resume-skills-section-skill">Next.js</div>
+                </div>
+              </div>
+              <div className="resume-skills-section">
+                <div className="resume-skills-section-title">Backend:</div>
+                <div className="resume-skills-section-skills-holder">
+                  <div className="resume-skills-section-skill">Node.js</div>
+                  <div className="resume-skills-section-skill">Express.js</div>
+                  <div className="resume-skills-section-skill">MongoDB</div>
+                </div>
+              </div>
+              <div className="resume-skills-section">
+                <div className="resume-skills-section-title">Languages:</div>
+                <div className="resume-skills-section-skills-holder">
+                  <div className="resume-skills-section-skill">JavaScript</div>
+                  <div className="resume-skills-section-skill">Python</div>
+                  <div className="resume-skills-section-skill">HTML/CSS</div>
+                  <div className="resume-skills-section-skill">C++</div>
+                  <div className="resume-skills-section-skill">Assembly</div>
                 </div>
               </div>
               <div className="resume-skills-section">
@@ -98,14 +105,6 @@ export default function Resume() {
                   <div className="resume-skills-section-skill">Puppeteer</div>
                   <div className="resume-skills-section-skill">Jest</div>
                   <div className="resume-skills-section-skill">Postman</div>
-                </div>
-              </div>
-              <div className="resume-skills-section">
-                <div className="resume-skills-section-title">Backend Tech:</div>
-                <div className="resume-skills-section-skills-holder">
-                  <div className="resume-skills-section-skill">Node.js</div>
-                  <div className="resume-skills-section-skill">Express.js</div>
-                  <div className="resume-skills-section-skill">MongoDB</div>
                 </div>
               </div>
             </div>
