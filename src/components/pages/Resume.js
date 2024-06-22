@@ -9,6 +9,7 @@ import LaptopIcon from "@mui/icons-material/Laptop";
 import { Fragment } from "react";
 import BrianChangResume from "../../assets/BChangsResume.pdf";
 import { Chip } from "@mui/material";
+import { useDarkMode } from "../../contexts/DarkModeContext";
 
 export default function Resume() {
   const handleDownloadOnClick = () => {
@@ -27,6 +28,8 @@ export default function Resume() {
       Label: `${link}`,
     });
   };
+
+  const { darkMode } = useDarkMode();
 
   return (
     <Fragment>
@@ -142,9 +145,9 @@ export default function Resume() {
               [ December 2023 - Present | <LocationOnIcon className="resume-location-icon" /> Remote ]
             </div>
             <div className="resume-experience-chips">
-              <Chip label="Node.js" size="middle" />
-              <Chip label="Puppeteer.js" size="middle" />
-              <Chip label="Git" size="middle" />
+              <Chip className="chip" label="Node.js" size="middle" />
+              <Chip className="chip" label="Puppeteer.js" size="middle" />
+              <Chip className="chip" label="Git" size="middle" />
             </div>
           </div>
           <div className="resume-freelance-subsection">Real Estate Report Extraction</div>
@@ -179,14 +182,14 @@ export default function Resume() {
               Canada ]
             </div>
             <div className="resume-experience-chips">
-              <Chip label="Node.js" size="middle" />
-              <Chip label="EJS" size="middle" />
-              <Chip label="MongoDB" size="middle" />
-              <Chip label="React" size="middle" />
-              <Chip label="React-Redux" size="middle" />
-              <Chip label="TypeScript" size="middle" />
-              <Chip label="Postman" size="middle" />
-              <Chip label="Git" size="middle" />
+              <Chip className="chip" label="Node.js" size="middle" />
+              <Chip className="chip" label="EJS" size="middle" />
+              <Chip className="chip" label="MongoDB" size="middle" />
+              <Chip className="chip" label="React" size="middle" />
+              <Chip className="chip" label="React-Redux" size="middle" />
+              <Chip className="chip" label="TypeScript" size="middle" />
+              <Chip className="chip" label="Postman" size="middle" />
+              <Chip className="chip" label="Git" size="middle" />
             </div>
           </div>
           <ul className="resume-list-container">
@@ -212,11 +215,11 @@ export default function Resume() {
               {<LocationOnIcon className="resume-location-icon" />} Taipei, Taiwan ]
             </div>
             <div className="resume-experience-chips">
-              <Chip label="Node.js" size="middle" />
-              <Chip label="React" size="middle" />
-              <Chip label="Socket.io" size="middle" />
-              <Chip label="WebRTC" size="middle" />
-              <Chip label="Git" size="middle" />
+              <Chip className="chip" label="Node.js" size="middle" />
+              <Chip className="chip" label="React" size="middle" />
+              <Chip className="chip" label="Socket.io" size="middle" />
+              <Chip className="chip" label="WebRTC" size="middle" />
+              <Chip className="chip" label="Git" size="middle" />
             </div>
           </div>
           <ul className="resume-list-container">
@@ -236,11 +239,11 @@ export default function Resume() {
               Canada ]
             </div>
             <div className="resume-experience-chips">
-              <Chip label="React" size="middle" />
-              <Chip label="React Native" size="middle" />
-              <Chip label="React Redux" size="middle" />
-              <Chip label="Jest" size="middle" />
-              <Chip label="Git" size="middle" />
+              <Chip className="chip" label="React" size="middle" />
+              <Chip className="chip" label="React Native" size="middle" />
+              <Chip className="chip" label="React Redux" size="middle" />
+              <Chip className="chip" label="Jest" size="middle" />
+              <Chip className="chip" label="Git" size="middle" />
             </div>
           </div>
           <ul className="resume-list-container">

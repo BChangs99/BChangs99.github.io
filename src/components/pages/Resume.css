@@ -10,6 +10,10 @@
   color: black;
 }
 
+.dark-mode .chip span {
+  color: white;
+}
+
 .resume-download-button-container {
   display: flex;
   justify-content: center;
