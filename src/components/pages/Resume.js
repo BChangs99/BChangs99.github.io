@@ -9,7 +9,6 @@ import LaptopIcon from "@mui/icons-material/Laptop";
 import { Fragment } from "react";
 import BrianChangResume from "../../assets/BChangsResume.pdf";
 import { Chip } from "@mui/material";
-import { useDarkMode } from "../../contexts/DarkModeContext";
 
 export default function Resume() {
   const handleDownloadOnClick = () => {
@@ -28,8 +27,6 @@ export default function Resume() {
       Label: `${link}`,
     });
   };
-
-  const { darkMode } = useDarkMode();
 
   return (
     <Fragment>
