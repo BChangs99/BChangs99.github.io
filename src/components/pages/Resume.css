@@ -30,26 +30,19 @@
 
 .resume-container {
   display: grid;
-  grid-template-columns: 40% 55%;
-  grid-template-rows: 9.5% 90.5%;
-  column-gap: 5%;
+  grid-template-columns: 1fr;
   padding-left: 30%;
   padding-right: 30%;
   margin-top: 0rem;
   padding-top: 0rem;
+  padding-bottom: 5rem;
+  /* Uncomment background for when printing */
+  /* background: white; */
   height: 100%;
-  /* For pdf making purposes */
-  /* background: linear-gradient(90deg, rgba(92, 64, 168, 0.25) 0%, rgba(10, 59, 110, 0.25) 50%, rgba(192, 2, 3, 0.25) 100%);
-   margin-left: 28.1%;
-   margin-right: 28.1%;
-   padding-left: 2.25%;
-   padding-right: 2.25%; */
-  /* ------- */
   font-family: "Roboto", sans-serif;
 }
 
 .resume-header {
-  grid-column: 1 / span 2;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -76,7 +69,7 @@
 }
 
 .resume-header-links a {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: black;
   display: flex;
   gap: 0.25rem;
@@ -85,26 +78,15 @@
   align-items: center;
 }
 
-.resume-left,
-.resume-right {
-  display: flex;
-  /* justify-content: center; */
-  gap: 2rem;
-  flex-direction: column;
-}
-
-.resume-skills-container,
 .resume-experience {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 1rem;
 }
 
 .resume-experience-header,
 .resume-skills-header,
-.resume-education-header,
-.resume-projects-header {
+.resume-education-header {
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -113,35 +95,46 @@
   display: flex;
 }
 
-.resume-experience-details {
-  font-size: 1rem;
-}
-
-.resume-project-header {
-  font-size: 1.5rem;
-  font-weight: bold;
+.resume-experience-chips {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.resume-projects-container {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.resume-freelance-subsection {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.resume-skills-education-section {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  column-gap: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .resume-skills-holder {
   display: grid;
   grid-template-rows: 1fr 0.5fr;
   grid-template-columns: 1fr 1fr;
-  row-gap: 1rem;
+  row-gap: 2.5rem;
   column-gap: 2.5rem;
 }
 .resume-skills-section {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+.frontend-section {
+  /* span 2 */
+  grid-column: 1 / span 2;
+}
+.devTools-section {
+  /* span 2 */
+  grid-column: 1 / span 2;
 }
 .resume-skills-section-skills-holder {
   display: flex;
@@ -150,10 +143,7 @@
   flex-wrap: wrap;
 }
 .resume-skills-section-skill {
-  font-size: 1rem;
-  /* padding: 0.25rem; */
-  /* border: 2px solid black; */
-  /* border-radius: 0.5rem; */
+  font-size: 1.2rem;
 }
 
 .resume-skills-section-title {
@@ -171,10 +161,20 @@
 
 .resume-education-courses-container {
   display: grid;
-  grid-template-columns: 48% 48%;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  column-gap: 4%;
-  row-gap: 5%;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.resume-education-courses-container-small {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 0.8rem;
+  font-size: 1.2rem;
 }
 
 .resume-education-courses-left,
@@ -185,19 +185,31 @@
 }
 
 .resume-education-school {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding-top: 0.5rem;
 }
 
+.resume-education-bolding {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.resume-skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .resume-education {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  border-left: 1px solid black;
+  padding-left: 2rem;
 }
 
 .resume-experience-details {
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .resume-location-icon {
@@ -210,6 +222,7 @@
   gap: 1rem;
   padding-inline-start: 1.25rem;
   margin: 0;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 2600px) {
@@ -250,18 +263,6 @@
     column-gap: 0;
     padding-bottom: 5rem;
   }
-
-  .resume-header {
-    grid-column: 1 / span 1;
-  }
-
-  .resume-left {
-    grid-column: 1 / span 2;
-  }
-
-  .resume-right {
-    grid-column: 1 / span 2;
-  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -273,6 +274,25 @@
     justify-content: space-between;
     padding-left: 0;
     padding-right: 0;
+  }
+  .resume-skills-education-section {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .resume-education-courses-container,
+  .resume-education-courses-container-small {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .resume-education {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .resume-experience-details {
+    font-size: 1.2rem;
   }
 }
 

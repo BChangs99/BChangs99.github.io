@@ -38,10 +38,10 @@ export default function Skills() {
   };
 
   const skills = {
-    languages: ["React (JSX)", "JavaScript", "HTML/CSS", "Node.js", "C++", "Python", "Assembly"],
-    frontendTech: ["React-Router", "React-Redux", "MaterialUI", "Ant Design", "Tailwind", "Next.js"],
+    languages: ["JavaScript", "HTML/CSS", "C++", "Python", "Assembly"],
+    frontendTech: ["React", "React-Router", "React-Redux", "MaterialUI", "Ant Design", "Tailwind", "Next.js"],
     devTools: ["Git", "GitHub", "VSCode", "Postman", "Jest"],
-    backendTech: ["Express", "MongoDB", "Mongoose"],
+    backendTech: ["Node.js", "Express", "MongoDB", "Mongoose"],
   };
 
   return (
