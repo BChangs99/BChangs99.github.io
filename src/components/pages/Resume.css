@@ -126,6 +126,8 @@
   grid-template-columns: 1fr 1fr;
   row-gap: 2.5rem;
   column-gap: 2.5rem;
+  justify-content: space-evenly;
+  align-content: space-evenly;
 }
 .resume-skills-section {
   display: flex;
@@ -139,6 +141,7 @@
 .devTools-section {
   /* span 2 */
   grid-column: 1 / span 2;
+  align-self: flex-end;
 }
 .resume-skills-section-skills-holder {
   display: flex;

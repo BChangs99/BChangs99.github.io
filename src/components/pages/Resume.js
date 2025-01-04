@@ -111,6 +111,12 @@ export default function Resume() {
           </div>
           <div className="resume-education">
             <div className="resume-education-header">Education</div>
+            <div className="resume-education-school">University of British Columbia | Masters of Data Science </div>
+            <div className="resume-education-bolding">Cumulative GPA: 92</div>
+            <div className="resume-education-bolding">Relevant Courses:</div>
+            <div className="resume-education-courses-container-small">
+              <div>DSCI 571: Supervised Learning</div> <div>DSCI 531: Data Visualization</div>{" "}
+            </div>
             <div className="resume-education-school">
               University of Waterloo | Mechatronics Honours | Bachelors of Engineering
             </div>
@@ -118,20 +124,20 @@ export default function Resume() {
             <div className="resume-education-bolding">Relevant Courses:</div>
             <div className="resume-education-courses-container">
               <div>SYDE 522: Foundations of Artificial Intelligience</div>
+              <div>MTE 140: Data Structures & Algorithms</div>
+              <div>MTE 262: Microprocessors & Digital Logic</div>
               <div>GENE 121: Digital Computation</div>
-              <div>MTE 262: Microprocessors and Digital Logic</div>
-              <div>MTE 140: Data Structures and Algorithms</div>
               <div>SYDE 548: User Centered Design Methods</div>
               <div>SYDE 543: Cognitive Ergonomics</div>
               {/* <div>ECE 484: Digital Control Applications</div> */}
               {/* <div>MTE 325: Microprocessor Systems and Interfacing for Mechatronics Engineering</div> */}
             </div>
-            <div className="resume-education-school">Meta Marketing Analytics Professional Certificate Course</div>
+            {/* <div className="resume-education-school">Meta Marketing Analytics Professional Certificate Course</div>
             <div className="resume-education-bolding">Relevant Courses:</div>
             <div className="resume-education-courses-container-small">
               <div>Data Analytics Methods for Marketing</div> <div>Statistics for Marketing</div>{" "}
               <div>Python Data Analytics</div> <div>Data Analysis with Spreadsheets and SQL</div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="resume-experience">
