@@ -202,7 +202,7 @@ let experiencesData = [
 function Experience() {
   const [filter, setFilter] = useState("all");
   const [bgColor, setBgColor] = useState({
-    all: "#f4a548",
+    all: "#4FD1C5",
     work: "transparent",
     school: "transparent",
   });
@@ -213,7 +213,7 @@ function Experience() {
       all: "transparent",
       work: "transparent",
       school: "transparent",
-      [filter]: "#f4a548",
+      [filter]: "#4FD1C5",
     }));
 
     ReactGA.event({

@@ -4,15 +4,17 @@ import "./skills.css";
 
 export default function Skills() {
   const [bgColor, setBgColor] = useState({
-    languages: "#f4a548",
-    frontendTech: "#f4a548",
-    devTools: "#f4a548",
-    backendTech: "#f4a548",
+    languages: "#4FD1C5",
+    frontendTech: "#4FD1C5",
+    dataScience: "#4FD1C5",
+    devTools: "#4FD1C5",
+    backendTech: "#4FD1C5",
   });
 
   const [filter, setFilter] = useState({
     languages: true,
     frontendTech: true,
+    dataScience: true,
     devTools: true,
     backendTech: true,
   });
@@ -27,7 +29,7 @@ export default function Skills() {
 
     setBgColor((prevBgColor) => ({
       ...prevBgColor,
-      [selectedFilter]: !isCurrentlyActive ? "#f4a548" : "#3c7a89",
+      [selectedFilter]: !isCurrentlyActive ? "#4FD1C5" : "#3c7a89",
     }));
 
     ReactGA.event({
@@ -38,10 +40,11 @@ export default function Skills() {
   };
 
   const skills = {
-    languages: ["JavaScript", "HTML/CSS", "C++", "Python", "Assembly"],
-    frontendTech: ["React", "React-Router", "React-Redux", "MaterialUI", "Ant Design", "Tailwind", "Next.js"],
-    devTools: ["Git", "GitHub", "VSCode", "Postman", "Jest"],
-    backendTech: ["Node.js", "Express", "MongoDB", "Mongoose"],
+    languages: ["JavaScript", "Python", "HTML/CSS", "R", "C++", "Assembly"],
+    frontendTech: ["React", "React-Router", "React-Redux", "MaterialUI", "Ant Design", "Tailwind", "Next.js", "D3.js"],
+    dataScience: ['Sci-Kit Learn', "Quarto", "Altair", "ggplot2"],
+    devTools: ["Git", "GitHub", "Postman", "Docker", "Jest", "Pytest",  "VSCode"],
+    backendTech: ["Node.js", "Express", "MongoDB", "Mongoose", "PyMongo", "PostgreSQL"],
   };
 
   return (

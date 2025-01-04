@@ -8,7 +8,7 @@
 
 .skills-grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
 }
 
@@ -25,8 +25,6 @@
   transform: translateY(0);
   transition: opacity 0.3s ease, transform 0.3s ease;
   padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  border: solid 1.5px #3c7a89;
   color: black;
   font-size: 1rem;
 }
@@ -39,13 +37,14 @@
 .skills-filter {
   padding: 0.5rem 1rem;
   border-bottom: solid 2.5px black;
+  font-weight: bold;
   color: black;
   cursor: pointer;
   font-size: 1rem;
 }
 
 .dark-mode .skills-filter {
-  color: white;
+  color: black;
 }
 
 .dark-mode .skill {
