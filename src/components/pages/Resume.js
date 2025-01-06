@@ -112,7 +112,7 @@ export default function Resume() {
           <div className="resume-education">
             <div className="resume-education-header">Education</div>
             <div className="resume-education-school">University of British Columbia | Masters of Data Science </div>
-            <div className="resume-education-bolding">Cumulative GPA: 92</div>
+            <div className="resume-education-bolding">Cumulative GPA: 93</div>
             <div className="resume-education-bolding">Relevant Courses:</div>
             <div className="resume-education-courses-container-small">
               <div>DSCI 571: Supervised Learning</div> <div>DSCI 531: Data Visualization</div>{" "}
